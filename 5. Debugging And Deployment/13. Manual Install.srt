@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:04,000
+So I just want to show you real quick what happens if you try to install an extension.
+
+2
+00:00:04,000 --> 00:00:11,000
+So I'm going to go to our PluralsightHelper.crx and I'm just going to drag this right into Chrome here,
+
+3
+00:00:11,000 --> 00:00:17,000
+and I'm going to go ahead and say Continue. This might harm my computer, sure, that's fine, and then you
+
+4
+00:00:17,000 --> 00:00:21,000
+can see that it says "Apps, extensions, and user scripts cannot be added from this website."
+
+5
+00:00:21,000 --> 00:00:28,000
+So, basically unless I have that permission set that we talked about, we can't even install this just by
+
+6
+00:00:28,000 --> 00:00:34,000
+clicking this from a website. You can imagine if you downloaded this from a particular site, you wouldn't
+
+7
+00:00:34,000 --> 00:00:41,000
+be able to run and install this, but what you can do is if you do have the Settings open in this Extension tab,
+
+8
+00:00:41,000 --> 00:00:47,000
+then you can drag it into here and then you see this drop to install, and then it'll ask about the permissions
+
+9
+00:00:47,000 --> 00:00:52,000
+and let you add it. So a user can manually add this and this is useful to know for testing if you're trying
+
+10
+00:00:52,000 --> 00:00:58,000
+to test out your package; you can do it, you just have to go through here, but it's definitely not a route
+
+11
+00:00:58,000 --> 00:01:06,000
+that most users are going to know about, so you don't want to really host a crx file on your site and then
+
+12
+00:01:06,000 --> 00:01:12,000
+expect a user to read some instructions that are going to tell them to download the file, save it somewhere else,
+
+13
+00:01:12,000 --> 00:01:17,000
+open up the Settings, and then drag and drop it. So, that's really the way that I think Google is pushing us
+
+14
+00:01:17,000 --> 00:01:24,000
+to use the Chrome Web Store, but it's really not that bad as we'll see in a little bit when I show you how
+
+15
+00:01:24,000 --> 00:59:00,000
+to use the Chrome Web Store; it's pretty nice and pretty easy to get an extension in there.
+

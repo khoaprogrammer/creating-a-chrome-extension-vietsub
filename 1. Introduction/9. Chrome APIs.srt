@@ -1,0 +1,80 @@
+1
+00:00:01,000 --> 00:00:07,000
+Now I did want to show you where you can get access to information about the Chrome APIs that we're going to
+
+2
+00:00:07,000 --> 00:00:12,000
+be using in the course and I want to give you a quick overview of what's available just so you can see
+
+3
+00:00:12,000 --> 00:00:17,000
+how powerful the Chrome APIs are and how much you can actually do with your extensions.
+
+4
+00:00:17,000 --> 00:00:25,000
+So, if you go to developers.google.com it will take you to this page and here you can click on Chrome extensions.
+
+5
+00:00:25,000 --> 00:00:30,000
+From here you can read about extensions, we're going to cover a lot of this material in this course,
+
+6
+00:00:30,000 --> 00:00:35,000
+but one thing that you might want to check out is this Reference portion here.
+
+7
+00:00:35,000 --> 00:00:40,000
+This has some really useful information. Specifically let's look at this chrome.*APIs.
+
+8
+00:00:40,000 --> 00:00:47,000
+So, this is all of the APIs that are available through Chrome. And here you can see that there are quite a
+
+9
+00:00:47,000 --> 00:00:51,000
+few different things in here that you can access.
+
+10
+00:00:51,000 --> 00:00:55,000
+For example, we could go to events and then you can see that we have this chrome.events.
+
+11
+00:00:55,000 --> 00:01:02,000
+And this gives some documentation on the chrome.events API to basically let you subscribe to events.
+
+12
+00:01:02,000 --> 00:01:08,000
+So, you can utilize this in yours extensions. And it has some good documentation on all of this.
+
+13
+00:01:08,000 --> 00:01:14,000
+So, you can go through this chrome.*APIs to find out exactly what you can do with Chrome.
+
+14
+00:01:14,000 --> 00:01:19,000
+Chances are if there is something in Chrome that you want to do with your extension, you can probably
+
+15
+00:01:19,000 --> 00:01:21,000
+find out how to do it through here.
+
+16
+00:01:21,000 --> 00:01:26,000
+You can access really most of Chrome through this.
+
+17
+00:01:26,000 --> 00:01:29,000
+And throughout this course we'll just be using a sub-set of the Chrome APIs.
+
+18
+00:01:29,000 --> 00:01:33,000
+There's so much of the Chrome APIs, obviously we can't cover all of them in this course.
+
+19
+00:01:33,000 --> 00:01:40,000
+But, once you know how to use some of the basic APIs, it'll be easy to go to this page and look at any other
+
+20
+00:01:40,000 --> 00:59:00,000
+APIs that you want to use and figure out how to use those.
+

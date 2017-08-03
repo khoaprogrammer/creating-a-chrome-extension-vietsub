@@ -1,0 +1,44 @@
+1
+00:00:02,000 --> 00:00:07,000
+As a Pluralsight author, I've often found the need to be able to get a count of how many courses authors
+
+2
+00:00:07,000 --> 00:00:11,000
+have produced and sort some of the course data from the Pluralsight website.
+
+3
+00:00:11,000 --> 00:00:17,000
+I like to see how well my courses are doing in the Top 100 and be able to see things like, what the longest
+
+4
+00:00:17,000 --> 00:00:22,000
+courses in the library are or the shortest ones. I've always thought it would be nice if I could see
+
+5
+00:00:22,000 --> 00:00:28,000
+the number of courses that an author has in the Top 100 or overall how many courses they've produced next
+
+6
+00:00:28,000 --> 00:00:35,000
+to the author name, and I've also wanted to be able to sort the columns in the table that displays the courses.
+
+7
+00:00:35,000 --> 00:00:40,000
+We're going to be building a chrome extension that will allow us to do both of those things.
+
+8
+00:00:40,000 --> 00:00:45,000
+We'll be creating an extension that will add a little icon like the one you can see here in the address
+
+9
+00:00:45,000 --> 00:00:49,000
+bar whenever there is a Pluralsight page that has course content.
+
+10
+00:00:49,000 --> 00:00:55,000
+We'll then be able to click that icon to see a list of helper commands we can run on the page.
+
+11
+00:00:55,000 --> 00:59:00,000
+I think you'll be pleasantly surprised at just how easy it is to get this working.
+

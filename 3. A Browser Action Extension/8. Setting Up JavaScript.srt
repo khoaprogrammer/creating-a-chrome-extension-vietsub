@@ -1,0 +1,40 @@
+1
+00:00:01,000 --> 00:00:06,000
+Okay, so now it's time to actually implement this functionality to be able to actually add some protein and
+
+2
+00:00:06,000 --> 00:00:12,000
+to save that data, but before we can do that, we're going to need to go ahead and create our JavaScript files
+
+3
+00:00:12,000 --> 00:00:19,000
+and bring in our jQuery. So what I'm going to do here is I'm going to link to our JavaScript and then we'll
+
+4
+00:00:19,000 --> 00:00:28,000
+create that JavaScript file, so we're just going to say script src = and we're just going to call this popup.js
+
+5
+00:00:28,000 --> 00:00:37,000
+and then we're also going to want to link our jQuery, so let's do a script src = jQuery and let me go ahead
+
+6
+00:00:37,000 --> 00:00:44,000
+and copy this entire string. Okay, so now we'll need to add these to our directory.
+
+7
+00:00:44,000 --> 00:00:51,000
+So let's go ahead and go to our directory and I'm going to go ahead and just copy the jQuery instance that
+
+8
+00:00:51,000 --> 00:00:59,000
+we already downloaded before, so I've got the jQuery file already, and then we're just going to create a new file
+
+9
+00:00:59,000 --> 00:01:08,000
+and we're going to just call this popup.js and then we'll need to go ahead and edit this and then create
+
+10
+00:01:08,000 --> 00:59:00,000
+that functionality.
+

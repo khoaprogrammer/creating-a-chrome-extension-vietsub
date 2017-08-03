@@ -1,0 +1,28 @@
+1
+00:00:01,000 --> 00:00:06,000
+The extension we created in this module had a lot more functionality than our first extension.
+
+2
+00:00:06,000 --> 00:00:13,000
+We made use of many useful chrome APIs, like the Storage APIs and the Notification APIs, and we even used
+
+3
+00:00:13,000 --> 00:00:19,000
+an event page to be able to register for events when our extension first loaded, but in many cases,
+
+4
+00:00:19,000 --> 00:00:25,000
+you'll want to create an extension that is not visible on the toolbar for every page, because it may not
+
+5
+00:00:25,000 --> 00:00:31,000
+apply to every single page. In those cases, you can use a Page Action Extension to just show the action
+
+6
+00:00:31,000 --> 00:00:38,000
+that is available for a certain page. We'll be using a combination of a page action in content scripts
+
+7
+00:00:38,000 --> 00:59:00,000
+to implement our next extension. Thanks for joining me, and take care.
+

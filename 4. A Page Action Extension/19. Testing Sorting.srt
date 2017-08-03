@@ -1,0 +1,68 @@
+1
+00:00:01,000 --> 00:00:08,000
+Okay, so let's go ahead and reload our extension just to make sure that it is up-to-date.
+
+2
+00:00:08,000 --> 00:00:15,000
+So we'll just reload this, and now if we go to, let's say, the Pluralsight New Releases page, and then we
+
+3
+00:00:15,000 --> 00:00:23,000
+click on our page_action, we can click this ‘Make sortable' and you can see it's actually modified this
+
+4
+00:00:23,000 --> 00:00:31,000
+table and now all of these columns are sortable, so we could actually sort by author, and now you can see
+
+5
+00:00:31,000 --> 00:00:39,000
+that it's sorted alphabetically by author. We can still even add our courseCounts, so now we can see the
+
+6
+00:00:39,000 --> 00:00:44,000
+actual courses that each author has done all on this single page.
+
+7
+00:00:44,000 --> 00:00:48,000
+We can find out some interesting information, like what is the longest and shortest course.
+
+8
+00:00:48,000 --> 00:00:55,000
+We can sort by duration here, so we can see that the shortest course is IronRuby by Example, and then if I
+
+9
+00:00:55,000 --> 00:01:03,000
+were to sort the other way, the longest course is this Design Patterns Library and then Advanced BizTalk Server 2010.
+
+10
+00:01:03,000 --> 00:01:08,000
+You can also sort by release date or the level. So, this is a pretty useful functionality that we've
+
+11
+00:01:08,000 --> 00:01:12,000
+been able to add very easily. We can also do this on the popular,
+
+12
+00:01:12,000 --> 00:01:21,000
+so on the Top 100 Leaderboard we could sort by author here just by activating this to make sortable,
+
+13
+00:01:21,000 --> 00:01:27,000
+and now we have that functionality. So you can imagine, there's quite a few different things that you could use this for.
+
+14
+00:01:27,000 --> 00:01:34,000
+You could create all kinds of functionality for different web pages and extend them with a chrome extension.
+
+15
+00:01:34,000 --> 00:01:40,000
+Instead of trying to modify the web page or do something else, you can basically just add on and add your
+
+16
+00:01:40,000 --> 00:01:47,000
+own code and add your own functionality and features. This is a really useful way to be able to utilize
+
+17
+00:01:47,000 --> 00:59:00,000
+something that someone else has created and be able to add functionality to it without having to reimplement it.
+

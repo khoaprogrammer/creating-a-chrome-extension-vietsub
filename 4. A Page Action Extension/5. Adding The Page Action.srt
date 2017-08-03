@@ -1,0 +1,80 @@
+1
+00:00:01,000 --> 00:00:05,000
+So next we're going to go ahead and create our popup.html.
+
+2
+00:00:05,000 --> 00:00:14,000
+I'm just going to go ahead and create a file here and we'll just call this popup.html and we're just going
+
+3
+00:00:14,000 --> 00:00:20,000
+to create our user interface, we're just going to make a really, really simple user interface, just like we did
+
+4
+00:00:20,000 --> 00:00:30,000
+for our browser_action. So let's go ahead and put our doctype html in here and then add our html and then
+
+5
+00:00:30,000 --> 00:00:39,000
+we'll add a head tag and we want to have a body tag. And inside our head, we'll just go ahead and put the title,
+
+6
+00:00:39,000 --> 00:00:50,000
+which we'll call this Pluralsight Helper, and then for our script we're going to add jQuery just like we did before.
+
+7
+00:00:50,000 --> 00:00:58,000
+Let me go ahead and copy this to get the exact name and we'll need to copy jQuery, of course, into our plug-in directory
+
+8
+00:00:58,000 --> 00:01:04,000
+and then we're going to have another script, which will be our script for this page, which we'll just call
+
+9
+00:01:04,000 --> 00:01:13,000
+popup.js, just like we did for the other extensions. And inside the body, we'll just put an h1 that says,
+
+10
+00:01:13,000 --> 00:01:24,000
+Pluralsight Helper Options, and then let's add two buttons; we're just going to make one button with the id
+
+11
+00:01:24,000 --> 00:01:31,000
+of courseCounts — this we'll use for our course counts, this will be a submit button, and we'll give it a
+
+12
+00:01:31,000 --> 00:01:40,000
+value of "Add course counts" and then let's go ahead and copy this and we'll add a second button,
+
+13
+00:01:40,000 --> 00:01:50,000
+which will be called makeSortable, in order to make the table sortable, and we'll call this "Make sortable."
+
+14
+00:01:50,000 --> 00:01:56,000
+So that's it, just a very simple user interface; remember, this user interface is going to be displayed when
+
+15
+00:01:56,000 --> 00:02:02,000
+we actually click on that page action. Now, when we first set up this extension, we're not going to see the
+
+16
+00:02:02,000 --> 00:02:07,000
+page action; we're going to go ahead and install the extension at this point to make sure that our manifest
+
+17
+00:02:07,000 --> 00:02:13,000
+file is correct and that everything is correct next, but before we could do that we do need to create this
+
+18
+00:02:13,000 --> 00:02:19,000
+popup.js and make sure our jQuery is in the directory. So let's go ahead and do that real quick.
+
+19
+00:02:19,000 --> 00:02:27,000
+We're just going to do a ‘New Text Document' and we'll just make a popup.js and we're not going to put
+
+20
+00:02:27,000 --> 00:59:00,000
+anything in there yet and then we're going to go ahead and copy jQuery into our directory.
+

@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:07,000
+Hi, this is John Sonmez from Pluralsight and welcome to this course on Creating Chrome Extensions.
+
+2
+00:00:07,000 --> 00:00:13,000
+Chrome extensions are a useful way to add functionality to the Chrome web browser which can come in handy
+
+3
+00:00:13,000 --> 00:00:19,000
+in a variety of different contexts. You can use Chrome extensions to integrate capabilities of your application
+
+4
+00:00:19,000 --> 00:00:27,000
+or service directly into Chrome or you can create Chrome extensions that add useful functionality to Chrome itself
+
+5
+00:00:27,000 --> 00:00:35,000
+and even modify web pages browsed with Chrome on the fly. In this course I'll take you through the surprisingly
+
+6
+00:00:35,000 --> 00:00:42,000
+easy process of creating Chrome extensions. We'll learn the basics about Chrome extensions and how they work.
+
+7
+00:00:42,000 --> 00:00:48,000
+And create our own extensions. We'll create both an extension that uses a user interface and one that works in the
+
+8
+00:00:48,000 --> 00:00:54,000
+background to add capabilities to webpages in the browser. So, if you've always wanted to create
+
+9
+00:00:54,000 --> 00:00:58,000
+Chrome extensions, but you didn't know where to get started, or you thought it might be too hard,
+
+10
+00:00:58,000 --> 00:59:00,000
+keep watching and I'll show you just how easy it is.
+

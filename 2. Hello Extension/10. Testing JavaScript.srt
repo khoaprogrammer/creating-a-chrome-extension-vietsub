@@ -1,0 +1,32 @@
+1
+00:00:01,000 --> 00:00:05,000
+All right, so let's test this out. I've got a Chrome window open, and we're just going to basically
+
+2
+00:00:05,000 --> 00:00:14,000
+click our extension. And when we do that it pops up, and now if I type in my name, you can see it says Hi, John!
+
+3
+00:00:14,000 --> 00:00:22,000
+So, whatever I type in here, it's going to echo back to me. Pretty simple functionality, but this is really
+
+4
+00:00:22,000 --> 00:00:26,000
+how easy it is to create a Chrome extension. And you could do whatever you wanted in there, you're basically
+
+5
+00:00:26,000 --> 00:00:31,000
+just using some JavaScript and HTML. Now, we're not using really the Chrome APIs at this point.
+
+6
+00:00:31,000 --> 00:00:37,000
+I'll show you a little bit about how to do that next and definitely in the next modules we'll be
+
+7
+00:00:37,000 --> 00:00:42,000
+getting into that. But, you don't even really have to. You can basically create an app that's
+
+8
+00:00:42,000 --> 00:59:00,000
+essentially launched from this button inside Chrome if you want to, if that's all that you need to do.
+

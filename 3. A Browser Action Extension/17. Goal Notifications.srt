@@ -1,0 +1,76 @@
+1
+00:00:01,000 --> 00:00:05,000
+Okay now let's go ahead and add one more notification; we're going to do this in a very similar way as we
+
+2
+00:00:05,000 --> 00:00:13,000
+did the last one. What we're going to do is we're going to create a notification when the total is equal to
+
+3
+00:00:13,000 --> 00:00:17,000
+or exceeds the goal. So when the user has reached their goal, we want to show them a notification.
+
+4
+00:00:17,000 --> 00:00:26,000
+So all we're going to do this time is we're going to go into our popup.js and then inside here where we're
+
+5
+00:00:26,000 --> 00:00:32,000
+adding the amount, we want to check to see if the new total is going to be greater than the goal.
+
+6
+00:00:32,000 --> 00:00:38,000
+So, we're going to need to get the goal, so we're going to go ahead and change this so we're getting the
+
+7
+00:00:38,000 --> 00:00:44,000
+total and the goal. And then we're just going to simply do a check here, so we're just going to say,
+
+8
+00:00:44,000 --> 00:00:56,000
+if(newTotal &gt;= items.goal), then let's go ahead and show a notification that says that they've met their goal.
+
+9
+00:00:56,000 --> 00:01:02,000
+So let's go ahead and copy this and change this.
+
+10
+00:01:02,000 --> 00:01:11,000
+And we still want the type to be basic; we're going to say here "Goal reached!" and then for our message,
+
+11
+00:01:11,000 --> 00:01:24,000
+let's go ahead and make this be "You reached your goal of" and then let's put here items.goal and then an
+
+12
+00:01:24,000 --> 00:01:29,000
+exclamation mark. So then we're going to still use this icon.png; again, you could use different icons for
+
+13
+00:01:29,000 --> 00:01:36,000
+different notifications if you wanted to. And then we want to actually do the notifying, so we're going to
+
+14
+00:01:36,000 --> 00:01:46,000
+call chrome.notifications.create and then we'll give this an id. For this one, let's call it goalReached
+
+15
+00:01:46,000 --> 00:01:55,000
+and then we pass in our options and then a blank function, because we're not going to do anything when this completes.
+
+16
+00:01:55,000 --> 00:01:58,000
+So now we can go ahead and save that and let's go ahead and
+
+17
+00:01:58,000 --> 00:02:05,000
+open up our browser and now let's see what we have — we have a goal of 150.
+
+18
+00:02:05,000 --> 00:02:15,000
+So, if we put in an amount of, let's say 100, we get a total of 100, but now if I put in 60, you can see
+
+19
+00:02:15,000 --> 00:59:00,000
+"Goal reached! You reached your goal of 150."
+

@@ -1,0 +1,44 @@
+1
+00:00:01,000 --> 00:00:05,000
+There are three main options for deploying your extension, we'll cover each of these in detail, but let's
+
+2
+00:00:05,000 --> 00:00:10,000
+go over them from a high level first. The first option is self-hosted.
+
+3
+00:00:10,000 --> 00:00:16,000
+With this option, you are creating your own extension package and putting it somewhere for users to access
+
+4
+00:00:16,000 --> 00:00:21,000
+and install in Chrome. There are certain security requirements you have to be aware of for this option,
+
+5
+00:00:21,000 --> 00:00:26,000
+but we'll talk about those in a little bit. Next up is normal Chrome Web Store deployment.
+
+6
+00:00:26,000 --> 00:00:31,000
+In this case, you put your extension in the Chrome Web Store where users can either browse to find it or
+
+7
+00:00:31,000 --> 00:00:37,000
+use a specific link to download and install it. Updates are also automatically handled in this case,
+
+8
+00:00:37,000 --> 00:00:41,000
+just like Chrome updates happen automatically for the browser itself.
+
+9
+00:00:41,000 --> 00:00:47,000
+Finally, we have a combination, where you put your extension in the Chrome Web Store, but you actually let
+
+10
+00:00:47,000 --> 00:00:54,000
+users install the extension from your own site. In this scenario, you maintain control over the distribution
+
+11
+00:00:54,000 --> 00:59:00,000
+of your extension, but you get the benefits in security of the Chrome Web Store hosting it for you.
+

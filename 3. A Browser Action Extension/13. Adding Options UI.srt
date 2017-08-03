@@ -1,0 +1,104 @@
+1
+00:00:01,000 --> 00:00:07,000
+Okay, so next we're going to add an Options page. In order to do that, what we're going to need to do is
+
+2
+00:00:07,000 --> 00:00:15,000
+to go into our manifest.json and we're going to have to add the entry for what the Options page is.
+
+3
+00:00:15,000 --> 00:00:22,000
+Every single extension that we create can have an Options page; we just have to specify that as a property
+
+4
+00:00:22,000 --> 00:00:32,000
+in our manifest. So let's go ahead and add this here and all we have to do is specify here options_page
+
+5
+00:00:32,000 --> 00:00:40,000
+and then the name of what that options page is going to be, so we're just going to call this options.html,
+
+6
+00:00:40,000 --> 00:00:45,000
+and then we'll go ahead and create an options.html in our directory.
+
+7
+00:00:45,000 --> 00:00:51,000
+So let's go ahead and open our directory and we'll just do a new, in fact let's just go ahead and copy our
+
+8
+00:00:51,000 --> 00:00:59,000
+popup.html to give us a bit of a head start here and we'll call this options.html, and then let's go ahead
+
+9
+00:00:59,000 --> 00:01:06,000
+and open this up in our Editor, and now we can go ahead and implement our options.
+
+10
+00:01:06,000 --> 00:01:13,000
+So, for our Options page, we're just going to make a real simple UI that's going to show what the goal is
+
+11
+00:01:13,000 --> 00:01:19,000
+in an input textbox that the user can change that goal and then we're going to have a button for saving
+
+12
+00:01:19,000 --> 00:01:25,000
+and one for resetting the total. So let's go ahead and change this title to Protein Tracker Options,
+
+13
+00:01:25,000 --> 00:01:32,000
+and then for our script, we're going to include jQuery, but let's also include this options.js, so we'll
+
+14
+00:01:32,000 --> 00:01:39,000
+have to create some JavaScript for our page and then we'll just call this Protein Tracker Options and then
+
+15
+00:01:39,000 --> 00:01:50,000
+here let's go ahead and leave our h2, and instead of having a span here, let's go ahead and put an input.
+
+16
+00:01:50,000 --> 00:01:59,000
+This way we'll have our input here that someone can enter the goal amount and we can save it from getting it
+
+17
+00:01:59,000 --> 00:02:06,000
+from this input. We'll want to change this id as well, so let's make this id be goal and then let's go ahead
+
+18
+00:02:06,000 --> 00:02:16,000
+and add our buttons, so we're going to have one button for saving, so we'll give this the id of save and
+
+19
+00:02:16,000 --> 00:02:24,000
+we'll give a value here of Save, and then let's add another button right below this, which we'll call our
+
+20
+00:02:24,000 --> 00:02:30,000
+reset button and the value for this one will be Reset Total.
+
+21
+00:02:30,000 --> 00:02:37,000
+So now let's just go ahead and check out our UI here in our Explorer window.
+
+22
+00:02:37,000 --> 00:02:45,000
+So if we go ahead and open this up, we can see that this looks okay - not the prettiest user interface,
+
+23
+00:02:45,000 --> 00:02:47,000
+but this should work for our Protein Tracker Options.
+
+24
+00:02:47,000 --> 00:02:54,000
+And then we're going to need that JavaScript file as well, so let's go ahead and we're just going to copy
+
+25
+00:02:54,000 --> 00:02:59,000
+and paste this one and we'll call this one options.js.
+
+26
+00:02:59,000 --> 00:59:00,000
+And then we need to implement this functionality for our options, which we'll do next.
+

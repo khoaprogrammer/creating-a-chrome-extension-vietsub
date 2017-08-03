@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:05,000
+Alright, at this point we've created several chrome extensions, utilizing most of the common functionality
+
+2
+00:00:05,000 --> 00:00:12,000
+of chrome extensions. We've created a Browser Action Extension that's able to store data and add menu items
+
+3
+00:00:12,000 --> 00:00:17,000
+and we just finished creating a Page Action Extension, complete with content scripts that let us actually
+
+4
+00:00:17,000 --> 00:00:23,000
+change the way a website behaves and add functionality. With these basics, you should be able to figure out
+
+5
+00:00:23,000 --> 00:00:29,000
+how to create an extension to do just about anything you want inside of chrome, within reason of course.
+
+6
+00:00:29,000 --> 00:00:35,000
+But, what good is creating extensions if you can't debug them and get them deployed for other people to use?
+
+7
+00:00:35,000 --> 00:00:42,000
+Up next, we'll be covering how to debug the chrome extensions we've created using the Chrome Developer Tools
+
+8
+00:00:42,000 --> 00:00:47,000
+and how to package up our extensions and deploy them to the Chrome Web Store.
+
+9
+00:00:47,000 --> 00:59:00,000
+Thanks for joining me, and take care.
+

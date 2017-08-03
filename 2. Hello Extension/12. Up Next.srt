@@ -1,0 +1,36 @@
+1
+00:00:01,000 --> 00:00:06,000
+Well, congratulations! You've created your first Chrome extension. I bet it was easier than you thought.
+
+2
+00:00:06,000 --> 00:00:10,000
+The basic process of creating an extension is pretty simple as long as you create a manifest file
+
+3
+00:00:10,000 --> 00:00:14,000
+and include the appropriate resources, Chrome does the rest for you.
+
+4
+00:00:14,000 --> 00:00:19,000
+If you're already creating web applications using HTML and JavaScript, you'll probably find creating
+
+5
+00:00:19,000 --> 00:00:25,000
+extensions to be extremely easy. But, this simple example doesn't really represent what a real extension
+
+6
+00:00:25,000 --> 00:00:30,000
+is likely to look like. We weren't really interacting much with the Chrome APIs, and our extension isn't
+
+7
+00:00:30,000 --> 00:00:36,000
+really implementing much functionality. In the next module, we'll create a more robust extension
+
+8
+00:00:36,000 --> 00:00:42,000
+that does a little more than our simple Hello World extension, and makes use of more of the Chrome APIs.
+
+9
+00:00:42,000 --> 00:59:00,000
+Thanks for joining me, and take care.
+

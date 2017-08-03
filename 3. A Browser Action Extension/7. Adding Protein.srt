@@ -1,0 +1,28 @@
+1
+00:00:01,000 --> 00:00:07,000
+In order to be able to add protein to our total and display the current total, we're going to make use of
+
+2
+00:00:07,000 --> 00:00:13,000
+the chrome storage APIs. We could, of course, just use the HTML5 local storage, but by using the chrome
+
+3
+00:00:13,000 --> 00:00:19,000
+storage APIs we can automatically gain the ability to sync data and we can store whole objects instead of strings.
+
+4
+00:00:19,000 --> 00:00:26,000
+We'll start off by causing a click on the Add Protein button to get the current total, if there is one,
+
+5
+00:00:26,000 --> 00:00:32,000
+from the Chrome storage, and then add the entered amount to that total, then we'll save that total in the Chrome storage.
+
+6
+00:00:32,000 --> 00:00:39,000
+We'll also add functionality to get the total from the Chrome storage as soon as our page loads and display it
+
+7
+00:00:39,000 --> 00:59:00,000
+in the UI next to the total. We'll be using jQuery to make this all easier, but it isn't required.
+

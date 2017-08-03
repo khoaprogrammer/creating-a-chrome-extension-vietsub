@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:05,000
+Okay, so let's go ahead and add a content script to our extension.
+
+2
+00:00:05,000 --> 00:00:12,000
+So what we're going to do is we're basically just going to add here a section for any content scripts.
+
+3
+00:00:12,000 --> 00:00:22,000
+So we're just going to call this content_scripts and then inside here we're going to add an array of the
+
+4
+00:00:22,000 --> 00:00:27,000
+content_scripts that are going to be added. Each one is going to be a particular object, so let's go
+
+5
+00:00:27,000 --> 00:00:32,000
+ahead and add an object here, and then we're going to want to have a matches property, so we're going to
+
+6
+00:00:32,000 --> 00:00:36,000
+specify what this should match, and I'm just going to copy this.
+
+7
+00:00:36,000 --> 00:00:42,000
+We're going to use a couple of the Pluralsight URLs that have some course lists here.
+
+8
+00:00:42,000 --> 00:00:48,000
+We don't want this to show up on every single page in Pluralsight and we don't want this to show up on
+
+9
+00:00:48,000 --> 00:00:55,000
+non-Pluralsight pages, so we're going to say basically anything under this training/Courses/* -
+
+10
+00:00:55,000 --> 00:01:01,000
+this * is a wild card, which means that it'll match anything that starts with this, and then anything under
+
+11
+00:01:01,000 --> 00:01:06,000
+this URL as well, and you can match your wild cards on a couple of different things.
+
+12
+00:01:06,000 --> 00:01:14,000
+You can check out the wild card matching if you look at the content_scripts in the chrome documentation for extensions.
+
+13
+00:01:14,000 --> 00:01:18,000
+It has a few other ways that you can use to match them, but most often you'll probably use matching similar
+
+14
+00:01:18,000 --> 00:01:24,000
+to how we're doing it here. So, next we're going to specify what our JavaScript is, so we're going to say
+
+15
+00:01:24,000 --> 00:01:33,000
+js and then here we have an array of our JavaScript. So, what we're going to include here is a JavaScript file
+
+16
+00:01:33,000 --> 00:01:41,000
+that we're going to call Pluralsight_cs (for content script) .js and then we're actually going to add our
+
+17
+00:01:41,000 --> 00:01:48,000
+jQuery as well, because we want to have that accessible from our content script, so we want to make sure
+
+18
+00:01:48,000 --> 00:01:54,000
+that we include this. Whenever you use content_scripts, if you have some library that you're going to use,
+
+19
+00:01:54,000 --> 00:01:59,000
+you might want to include it here because you can't always rely on that being on our page.
+
+20
+00:01:59,000 --> 00:02:05,000
+So instead of us relying on this version of jQuery existing on the page, we're going to make sure that we
+
+21
+00:02:05,000 --> 00:59:00,000
+include it here, and we'll go ahead and add a comma after this, so now our manifest file should be complete.
+

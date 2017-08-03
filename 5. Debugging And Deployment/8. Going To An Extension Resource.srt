@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:04,000
+Okay, so the last thing that I want to show you about debugging extensions is if you're trying to reach
+
+2
+00:00:04,000 --> 00:00:14,000
+a page in your extension that's sort of hard to reach. You can always do this chrome-extension: //,
+
+3
+00:00:14,000 --> 00:00:19,000
+then the extension ID, and then the actual filename, and then it will show up directly in the browser -
+
+4
+00:00:19,000 --> 00:00:24,000
+you can just browse to this. So, for example, if we go to our
+
+5
+00:00:24,000 --> 00:00:28,000
+Settings Extensions, you can see that each extension has this ID.
+
+6
+00:00:28,000 --> 00:00:38,000
+So we can find, let's say our Pluralsight Helper, we could just replace this here, and then go to popup.html,
+
+7
+00:00:38,000 --> 00:59:00,000
+and this will show up in here as well.
+

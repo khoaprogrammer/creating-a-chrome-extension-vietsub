@@ -1,0 +1,84 @@
+1
+00:00:01,000 --> 00:00:05,000
+So, I want to show you how you can check out the background pages that are running inside of Chrome.
+
+2
+00:00:05,000 --> 00:00:11,000
+And also, just another tool that you can utilize when you're developing your extensions that you'll
+
+3
+00:00:11,000 --> 00:00:15,000
+probably find useful for checking the memory requirements and seeing what's running.
+
+4
+00:00:15,000 --> 00:00:21,000
+So, if you go to your Chrome options here and then go to tools, you can see this Task Manager.
+
+5
+00:00:21,000 --> 00:00:24,000
+Now this shows you more than just the background pages.
+
+6
+00:00:24,000 --> 00:00:30,000
+It shows you your actual browser and the tabs and then any apps that are running.
+
+7
+00:00:30,000 --> 00:00:33,000
+And also, your extensions themselves and how much memory they're taking up.
+
+8
+00:00:33,000 --> 00:00:38,000
+This is pretty useful information. But you can also see here something's like the background page if you have
+
+9
+00:00:38,000 --> 00:00:44,000
+different background pages running. And you can see how much memory those background pages are taking.
+
+10
+00:00:44,000 --> 00:00:48,000
+So, this is really useful for figuring out exactly what's going on.
+
+11
+00:00:48,000 --> 00:00:54,000
+And it shows you which background pages are running. So, if you're wondering why your browser's running so slow,
+
+12
+00:00:54,000 --> 00:00:58,000
+or why it's taking up so much memory, when you look in here and you see how many extensions are actually
+
+13
+00:00:58,000 --> 00:01:02,000
+taking up a large amount of memory, that's your answer.
+
+14
+00:01:02,000 --> 00:01:08,000
+So the more extensions that you install, the more that you're going to be using up memory with Chrome.
+
+15
+00:01:08,000 --> 00:01:13,000
+And you want to be careful with that when you create your own extension; you probably want to look in here
+
+16
+00:01:13,000 --> 00:01:18,000
+and check out the memory requirements of that extension. Especially if you're using a background page,
+
+17
+00:01:18,000 --> 00:01:22,000
+you can see that some background pages can take up quite a bit of memory.
+
+18
+00:01:22,000 --> 00:01:26,000
+In fact, I have a background page for this REST console, and it doesn't even really make sense.
+
+19
+00:01:26,000 --> 00:01:31,000
+I'm not using the REST console activity, so it might make sense to disable this extension.
+
+20
+00:01:31,000 --> 00:01:38,000
+This extension probably really doesn't need a background page because I can't imagine why it's using one
+
+21
+00:01:38,000 --> 00:59:00,000
+at this point when I'm not even using the REST console in my browser.
+

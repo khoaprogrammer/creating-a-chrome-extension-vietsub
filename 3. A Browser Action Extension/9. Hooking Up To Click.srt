@@ -1,0 +1,56 @@
+1
+00:00:01,000 --> 00:00:07,000
+Okay, so I'm here in the popup.js in the Editor and what we want to do here is we want to make it so that
+
+2
+00:00:07,000 --> 00:00:11,000
+that click button does something, so that's the first thing that we're going to do is we're just going to
+
+3
+00:00:11,000 --> 00:00:16,000
+test this to make sure it works. I'm just going to use an alert to show an alert box that shows that we've
+
+4
+00:00:16,000 --> 00:00:28,000
+hooked up this click. So, we're just going to do our jQuery $(function, to have this function start or run
+
+5
+00:00:28,000 --> 00:00:34,000
+when the page loads up, and then inside here we're going to hook up our event handler, so we're just going
+
+6
+00:00:34,000 --> 00:00:45,000
+to do #addAmount and we're going to say when it's clicked, execute the following function, and inside here,
+
+7
+00:00:45,000 --> 00:00:49,000
+all we're going to do for now is just we're going to say alert(‘clicked').
+
+8
+00:00:49,000 --> 00:00:55,000
+So now we just want to verify that this is going to work, so I'm just going to go ahead and
+
+9
+00:00:55,000 --> 00:01:00,000
+open up a browser window and I'm just going to click this and then click the Add Protein button.
+
+10
+00:01:00,000 --> 00:01:05,000
+You can see that it says clicked, so we know that we're hooked up correctly.
+
+11
+00:01:05,000 --> 00:01:09,000
+You always want to take these small steps whenever you're doing something like this because you don't want
+
+12
+00:01:09,000 --> 00:01:14,000
+to end up putting a lot of code in here and then trying to debug that; by doing this really small step,
+
+13
+00:01:14,000 --> 00:01:20,000
+I know that this popup.js is being loaded and that it's hooking up to this click and everything is working.
+
+14
+00:01:20,000 --> 00:59:00,000
+So now I'm ready to take the next step.
+

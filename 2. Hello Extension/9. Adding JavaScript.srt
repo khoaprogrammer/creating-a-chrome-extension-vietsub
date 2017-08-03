@@ -1,0 +1,172 @@
+1
+00:00:01,000 --> 00:00:05,000
+Okay, so what we're going to do at this point is we're going to add some JavaScript.
+
+2
+00:00:05,000 --> 00:00:10,000
+And what we're going to do is we're going to add some JavaScript to add this functionality that's going to
+
+3
+00:00:10,000 --> 00:00:16,000
+make it so that when a user types their name into that input box, it's going to echo their name back
+
+4
+00:00:16,000 --> 00:00:21,000
+and say Hi, and then whatever their name is. So, in order to do this, we're actually going to use
+
+5
+00:00:21,000 --> 00:00:25,000
+jQuery, and then we're also going to use own JavaScript.
+
+6
+00:00:25,000 --> 00:00:31,000
+So, the first thing I'm going to do is show you how to get jQuery added to our extension.
+
+7
+00:00:31,000 --> 00:00:35,000
+This is pretty simple, all we're going to do is basically just go to jQuery.
+
+8
+00:00:35,000 --> 00:00:38,000
+So, we're just going to the jquery.com.
+
+9
+00:00:38,000 --> 00:00:42,000
+And then we're just going to download jQuery.
+
+10
+00:00:42,000 --> 00:00:46,000
+And you can get whichever you want, the compressed or uncompressed;
+
+11
+00:00:46,000 --> 00:00:52,000
+it doesn't really make much of a difference for an extension, so I'm just going to get the uncompressed version.
+
+12
+00:00:52,000 --> 00:00:56,000
+And I'm just going to go ahead and do a Save as here.
+
+13
+00:00:56,000 --> 00:00:57,000
+And I'm going to save this.
+
+14
+00:00:57,000 --> 00:01:00,000
+And I'm actually just going to save this right to that folder.
+
+15
+00:01:00,000 --> 00:01:03,000
+So, let's just go right into here in Hello World
+
+16
+00:01:03,000 --> 00:01:05,000
+and we're just going to Save this.
+
+17
+00:01:05,000 --> 00:01:12,000
+Okay, so now we have jQuery. And then the next thing we're going to do is create our own JavaScript file
+
+18
+00:01:12,000 --> 00:01:18,000
+that we're going to utilize here. So, let's go ahead and do New, Text Document.
+
+19
+00:01:18,000 --> 00:01:24,000
+And we're just going to call this popup.js.
+
+20
+00:01:24,000 --> 00:01:29,000
+And we'll need to go ahead and add this functionality, so I'm going to edit this.
+
+21
+00:01:29,000 --> 00:01:33,000
+And I've got Visual Studio open here and what we're going to want to do is include our jQuery file as
+
+22
+00:01:33,000 --> 00:01:42,000
+well as our popup.js. So, we're just going to do this just like we would do in any normal HTML page.
+
+23
+00:01:42,000 --> 00:01:45,000
+We're going to include our script here, right inside of the head.
+
+24
+00:01:45,000 --> 00:01:56,000
+So, we're just going to say script src=jquery let's go ahead and get the correct name for this.
+
+25
+00:01:56,000 --> 00:02:01,000
+So that will include jQuery and do remember with the script tags that you do have to use this closing
+
+26
+00:02:01,000 --> 00:02:05,000
+script or you might have some problems. And then we're going to do another one and we're just going to say
+
+27
+00:02:05,000 --> 00:02:16,000
+src=popup.js and that will include our popup.js. So, now let's go ahead and edit our popup.js.
+
+28
+00:02:16,000 --> 00:02:22,000
+And what we're going to do inside this popup.js is we're basically just going to create some
+
+29
+00:02:22,000 --> 00:02:28,000
+real simple functionality. I'm using jQuery here, you don't have to use jQuery if you don't want to jQuery.
+
+30
+00:02:28,000 --> 00:02:35,000
+But, I do find it a little bit easier to create JavaScript functionality like this with jQuery.
+
+31
+00:02:35,000 --> 00:02:41,000
+So, I'm basically setting this up so that this is going to run on document ready, this function that
+
+32
+00:02:41,000 --> 00:02:47,000
+we're specifying here, and then what I'm going to do is I'm going to grab our element with the ID name
+
+33
+00:02:47,000 --> 00:02:55,000
+which is going to be our input box, and I'm going to register an event handler for keyup.
+
+34
+00:02:55,000 --> 00:03:01,000
+So, basically whenever you type into that box when the key is up, after you're done typing, it's going
+
+35
+00:03:01,000 --> 00:03:07,000
+to execute this particular function. So, we're just going to create our function here.
+
+36
+00:03:07,000 --> 00:03:14,000
+And inside this function, what we want to do is we're going to want to echo back that name.
+
+37
+00:03:14,000 --> 00:03:19,000
+So, I'm going to go ahead and get our greeting which will be our h1,
+
+38
+00:03:19,000 --> 00:03:27,000
+and I'm going to set the text=Hi comma space and then I'm going to do a plus here, and I'm just going
+
+39
+00:03:27,000 --> 00:03:31,000
+grab that name again. So, we're going to get the text that's in there.
+
+40
+00:03:31,000 --> 00:03:39,000
+So, we're going to say name.val which will get the value of the name and then we're going to add an exclamation.
+
+41
+00:03:39,000 --> 00:03:45,000
+So, that's it. Some really simple functionality, not a lot to this, but let's go ahead and test this out.
+
+42
+00:03:45,000 --> 00:03:50,000
+Now, the nice thing about testing this out is we don't actually have to reload this inside our browser.
+
+43
+00:03:50,000 --> 00:59:00,000
+It's going to automatically reload for us.
+

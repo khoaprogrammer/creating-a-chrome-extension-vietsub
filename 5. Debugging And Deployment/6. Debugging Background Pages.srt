@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:09,000
+Okay, so that's the basics of doing debugging for our UI pages, but you may need to get at some background pages.
+
+2
+00:00:09,000 --> 00:00:15,000
+So, for example, we have an eventPage for our Protein Tracker and then for our Pluralsight extension,
+
+3
+00:00:15,000 --> 00:00:20,000
+we have some pages as well. So let's take a look and see how we can get to those.
+
+4
+00:00:20,000 --> 00:00:24,000
+So, for example, let's look at our Pluralsight extension.
+
+5
+00:00:24,000 --> 00:00:28,000
+If I go to this Top 100 Leaderboard here, if I right-click on our extension,
+
+6
+00:00:28,000 --> 00:00:36,000
+I can do an ‘Inspect popup' and then I'm going to be able to access this extension here, so this one makes sense,
+
+7
+00:00:36,000 --> 00:00:42,000
+and this is pretty easy — you probably won't have much trouble figuring that out, but let's suppose you want
+
+8
+00:00:42,000 --> 00:00:46,000
+to get to those event pages behind this. Well the way to do that is you can just go
+
+9
+00:00:46,000 --> 00:00:52,000
+to your Settings and then go to Extensions, and then from here, if you look at each one of these extensions,
+
+10
+00:00:52,000 --> 00:00:59,000
+let's take our Pluralsight Helper, for example; it has this "Inspect views: generated background page.html."
+
+11
+00:00:59,000 --> 00:01:04,000
+So what we can do here is we can click on this,
+
+12
+00:01:04,000 --> 00:01:12,000
+and then this should bring up our developer tools for that eventPage, and what you'll notice is that actually
+
+13
+00:01:12,000 --> 00:01:18,000
+what happens is Chrome generates a background_page.html that just has a body that has your script in here
+
+14
+00:01:18,000 --> 00:01:24,000
+that has your source for your eventPage. You can, of course, create an HTML page with an eventPage if you want to,
+
+15
+00:01:24,000 --> 00:01:30,000
+but Chrome will just generate this for you. But what we can do now is we can go in here and we can look at
+
+16
+00:01:30,000 --> 00:01:37,000
+this eventPage.js and this is our actual JavaScript, and again, we can set breakpoints in here if we want to;
+
+17
+00:01:37,000 --> 00:01:47,000
+so, for example, let's say we set a breakpoint on that, then we go over here, and then we reload this page.
+
+18
+00:01:47,000 --> 00:01:51,000
+You can see that we're hitting this breakpoint — we got this request, action, which is set to show,
+
+19
+00:01:51,000 --> 00:02:00,000
+so it's about to show our actual extension. So you could do this with anything that you have as a background_page,
+
+20
+00:02:00,000 --> 00:02:05,000
+and of course, you could have multiple background pages, so you could use this for whatever background pages
+
+21
+00:02:05,000 --> 00:02:11,000
+you have and you can open up multiple Chrome Developer Tool windows in order to be able to debug back and forth
+
+22
+00:02:11,000 --> 00:02:17,000
+when you're sending messages back and forth. And I do want to remind you also though, don't forget that
+
+23
+00:02:17,000 --> 00:02:24,000
+sometimes it's easiest to just go ahead and do something as simple as do alert(‘hi').
+
+24
+00:02:24,000 --> 00:02:30,000
+I mean this isn't the best practice for debugging some complex JavaScript, but occasionally it makes sense
+
+25
+00:02:30,000 --> 00:02:34,000
+to just do something really easy, really visible; just put in your code and run this, and this is going to
+
+26
+00:02:34,000 --> 00:02:37,000
+prove that you got to this point, that you don't have to open up the console.
+
+27
+00:02:37,000 --> 00:02:44,000
+You can also do things like debug right in here that will set a debugger, set a breakpoint automatically
+
+28
+00:02:44,000 --> 00:59:00,000
+or logging to the Chrome console, which you can do just by doing console.log, and then specifying your message.
+

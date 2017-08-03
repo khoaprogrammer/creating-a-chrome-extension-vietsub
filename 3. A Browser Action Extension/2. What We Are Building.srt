@@ -1,0 +1,32 @@
+1
+00:00:01,000 --> 00:00:07,000
+We're going to be building the famous Protein Tracker Application that's able to track a user's protein total
+
+2
+00:00:07,000 --> 00:00:14,000
+versus the goal they set. We'll be basically building a simple application in the form of a chrome extension.
+
+3
+00:00:14,000 --> 00:00:20,000
+The idea of this extension is that a user should be able to click the extension to see the protein total
+
+4
+00:00:20,000 --> 00:00:25,000
+and goal, and then be able to add protein to their running total from that user interface.
+
+5
+00:00:25,000 --> 00:00:31,000
+The user should also be able to get to an options screen where they can reset the total and set a goal.
+
+6
+00:00:31,000 --> 00:00:37,000
+And the extension should provide notifications to the user when they reset the total or achieve their goal.
+
+7
+00:00:37,000 --> 00:00:44,000
+We'll even add the ability for a user to add protein to their total by selecting a number on a loaded page
+
+8
+00:00:44,000 --> 00:59:00,000
+and selecting ‘Add Protein' from the right-click context menu.
+

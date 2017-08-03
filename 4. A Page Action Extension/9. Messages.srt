@@ -1,0 +1,44 @@
+1
+00:00:01,000 --> 00:00:08,000
+Content scripts do not have the ability to directly communicate with Background Pages or UI Pages or most of
+
+2
+00:00:08,000 --> 00:00:14,000
+the other chrome APIs. In order for a content script to be able to do something like show a page action,
+
+3
+00:00:14,000 --> 00:00:22,000
+for instance, or update a badge count, the content script has to use the chrome message API to send a message
+
+4
+00:00:22,000 --> 00:00:28,000
+that another part of the extension is listening for. Most commonly, you'll use this messaging API to send
+
+5
+00:00:28,000 --> 00:00:34,000
+single messages to and from content script using the chrome.runtime.sendMessage and
+
+6
+00:00:34,000 --> 00:00:42,000
+chrome.tabs.sendMessageMethods, but Chrome also supports long-lived connections using ports,
+
+7
+00:00:42,000 --> 00:00:50,000
+passing messages to other extensions, sending messages from web pages, and even messaging with native applications.
+
+8
+00:00:50,000 --> 00:00:55,000
+In this course, we'll just be using the simple and most used approach of sending messages to and from
+
+9
+00:00:55,000 --> 00:01:02,000
+content scripts though. We'll be using messaging to both send a message from the content script to the
+
+10
+00:01:02,000 --> 00:01:09,000
+event page to tell it to display the page action and from the page action UI to the content script to tell
+
+11
+00:01:09,000 --> 00:59:00,000
+it to make modifications to the page.
+

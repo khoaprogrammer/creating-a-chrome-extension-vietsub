@@ -1,0 +1,136 @@
+1
+00:00:01,000 --> 00:00:05,000
+Now I want to show you a couple of different extensions just so you can get a basic idea of what
+
+2
+00:00:05,000 --> 00:00:10,000
+a Chrome extension is. So, you've probably already installed extensions in Chrome if you've used Chrome.
+
+3
+00:00:10,000 --> 00:00:15,000
+But, maybe you haven't. If you haven't ever installed any extensions in Chrome, you can usually find
+
+4
+00:00:15,000 --> 00:00:22,000
+extensions by going to the Chrome Web Store. So, if you go to chrome web store.
+
+5
+00:00:22,000 --> 00:00:27,000
+Inside here, this is a good place to find extensions if you just go to extension here.
+
+6
+00:00:27,000 --> 00:00:31,000
+And if you're not familiar with extensions already, I encourage you to take a look through here.
+
+7
+00:00:31,000 --> 00:00:35,000
+Especially if you use Chrome, there's quite a few really good extensions in here.
+
+8
+00:00:35,000 --> 00:00:40,000
+In fact, I need to go back through here and see if there's anything new that I might be able to utilize
+
+9
+00:00:40,000 --> 00:00:47,000
+that I've been missing. A lot of times extensions can really enhance the usage of Chrome because it can
+
+10
+00:00:47,000 --> 00:00:53,000
+give you some capabilities baked right into the browser that can really come in handy.
+
+11
+00:00:53,000 --> 00:00:57,000
+For example, I have a couple of extensions installed; one of them is the School of Voice extension
+
+12
+00:00:57,000 --> 00:01:03,000
+which I really like a lot because it lets me access my Google voice messages right here
+
+13
+00:01:03,000 --> 00:01:05,000
+and to even call and text someone.
+
+14
+00:01:05,000 --> 00:01:12,000
+And then I have this Bookmarking extension that automatically adds to my bookmark.
+
+15
+00:01:12,000 --> 00:01:18,000
+And so this is a pretty neat extension and this just shows you some of the capabilities of the extension
+
+16
+00:01:18,000 --> 00:01:24,000
+framework in Chrome. So for example, when I click this, it brings up my bookmarks and I can search it.
+
+17
+00:01:24,000 --> 00:01:29,000
+So, this has the extensions UI, but it also integrates
+
+18
+00:01:29,000 --> 00:01:37,000
+directly into this Omni bar in Chrome. So, if I hit * and then I type here.
+
+19
+00:01:37,000 --> 00:01:45,000
+So, I do let's say .NET. You can see that's actually searching my bookmarks and it's going to show me
+
+20
+00:01:45,000 --> 00:01:50,000
+what bookmarks are matching here. So, I can actually go to a bookmark directly from here.
+
+21
+00:01:50,000 --> 00:01:52,000
+You can see that is shows this Neat Bookmarks.
+
+22
+00:01:52,000 --> 00:01:58,000
+So, extensions really have a lot of different capabilities that we can utilize and we'll talk about
+
+23
+00:01:58,000 --> 00:02:03,000
+these more later. But, this should just you a basic idea of what extensions look like most of the time
+
+24
+00:02:03,000 --> 00:02:11,000
+you're interacting with them here in the browser. But, extensions don't actually have to be here in this
+
+25
+00:02:11,000 --> 00:02:16,000
+toolbar, some extensions are going to be running in the background and you won't actually even see them.
+
+26
+00:02:16,000 --> 00:02:22,000
+You can always see all the extensions that are running inside Chrome by going to this Manage here.
+
+27
+00:02:22,000 --> 00:02:29,000
+Or just doing chrome://extensions, you can just go to this in your browser and you'll see all your extensions.
+
+28
+00:02:29,000 --> 00:02:35,000
+And here you can actually see the Permissions for the extension, go to the website, you can allow them in
+
+29
+00:02:35,000 --> 00:02:41,000
+incognito mode and set the options on that. Or you can enable or you can delete the extensions.
+
+30
+00:02:41,000 --> 00:02:44,000
+So, you can see all the different extensions that I have here.
+
+31
+00:02:44,000 --> 00:02:48,000
+So, if you're not familiar with extensions at all, if you haven't ever used them in Chrome, I encourage you
+
+32
+00:02:48,000 --> 00:02:54,000
+to go to the Chrome Web Store and try a couple of extensions. Install them and get an idea of what extensions
+
+33
+00:02:54,000 --> 00:02:58,000
+can do and what extensions are out there before you continue with this course,
+
+34
+00:02:58,000 --> 00:59:00,000
+because that will help you when you're trying to learn about extensions.
+

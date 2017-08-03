@@ -1,0 +1,36 @@
+1
+00:00:01,000 --> 00:00:08,000
+UI pages are just HTML pages that display a UI for an extension. If you've installed any Chrome extensions,
+
+2
+00:00:08,000 --> 00:00:13,000
+this is probably the part of an extension you're most familiar with because it's the most visible part.
+
+3
+00:00:13,000 --> 00:00:18,000
+A UI page is usually displayed when a user clicks the extensions icon in the toolbar.
+
+4
+00:00:18,000 --> 00:00:24,000
+Browser actions which are the Icons that appear in the toolbar can have a pop-up which is an HTML page
+
+5
+00:00:24,000 --> 00:00:27,000
+that's displayed when the browser action's clicked.
+
+6
+00:00:27,000 --> 00:00:34,000
+Option pages can also be specified to customize an extension. UI pages can even override default pages in
+
+7
+00:00:34,000 --> 00:00:41,000
+the Chrome browser or be displayed dynamically by JavaScript code in the extension that opens a new tab or window.
+
+8
+00:00:41,000 --> 00:00:46,000
+UI pages in an extension can access and manipulate each other by changing properties on their DOMs.
+
+9
+00:00:46,000 --> 00:59:00,000
+UI pages can even invoke functions on a background page, if needed.
+

@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:07,000
+Now let's see how we can create an actual extension package; right now we've been using our extensions just
+
+2
+00:00:07,000 --> 00:00:11,000
+by pointing Chrome at a directory and it's been reading it from there, but you may want to actually pack
+
+3
+00:00:11,000 --> 00:00:16,000
+your extension, either to do self-hosting or just to test it out, maybe you want to be able to give it to
+
+4
+00:00:16,000 --> 00:00:21,000
+someone to be able to test it. So what we can do here is from Extensions, we can just click this
+
+5
+00:00:21,000 --> 00:00:23,000
+‘Pack Extension' and this is pretty easy.
+
+6
+00:00:23,000 --> 00:00:29,000
+All we're going to do is just browse to where our Extension directory is, so in my case it's under here,
+
+7
+00:00:29,000 --> 00:00:35,000
+and we're going to take, let's say, our Pluralsight Helper and we'll just click OK,
+
+8
+00:00:35,000 --> 00:00:42,000
+and then when I click ‘Pack Extension', it's going to go ahead and it's created this .crx file and it's also
+
+9
+00:00:42,000 --> 00:00:51,000
+created this PluralsightHelper.pem - this is my key file. This is important to keep because it is a private key
+
+10
+00:00:51,000 --> 00:00:56,000
+that was used to sign this extension. So if I want to update this, I need to have this file.
+
+11
+00:00:56,000 --> 00:00:57,000
+So let's go ahead and take a look here.
+
+12
+00:00:57,000 --> 00:01:04,000
+Now on the file system you can see we have this crx and we have this .pem, and the crx file format is
+
+13
+00:01:04,000 --> 00:01:11,000
+actually a zip file format that has a header that has some additional information in it as well.
+
+14
+00:01:11,000 --> 00:01:17,000
+And now let's say that I made some changes to my extension; let's say that I update the version number
+
+15
+00:01:17,000 --> 00:01:21,000
+in my manifest file, so let's go ahead and edit this real quick.
+
+16
+00:01:21,000 --> 00:01:27,000
+And let's say we have a new version, we have version 1.1. So now I could just save this
+
+17
+00:01:27,000 --> 00:01:29,000
+and then I'm going to want to update this,
+
+18
+00:01:29,000 --> 00:01:34,000
+so what I would do is just do ‘Pack my extension' and then I would actually browse
+
+19
+00:01:34,000 --> 00:01:36,000
+to this private key file,
+
+20
+00:01:36,000 --> 00:01:41,000
+and now when I click ‘Pack Extension', it of course gives me a warning that there's already a cx file
+
+21
+00:01:41,000 --> 00:01:44,000
+present with this name and I'm going to proceed anyway,
+
+22
+00:01:44,000 --> 00:59:00,000
+and so now I have my updated extension. So that's how to pack it; it's really, really easy to do.
+

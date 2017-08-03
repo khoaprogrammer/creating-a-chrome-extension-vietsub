@@ -1,0 +1,52 @@
+1
+00:00:01,000 --> 00:00:06,000
+Now this is one of my favorite ways to deploy your extension. This approach is a combination approach we
+
+2
+00:00:06,000 --> 00:00:09,000
+talked about earlier; the official name is the inline installation.
+
+3
+00:00:09,000 --> 00:00:15,000
+In this case, we'll host our extension with the Chrome Web Store, but we'll add some code to our page to
+
+4
+00:00:15,000 --> 00:00:21,000
+allow a user to install it directly from our site. To do this, it's not very hard at all.
+
+5
+00:00:21,000 --> 00:00:26,000
+First, you need to, of course, have your extension deployed in the Chrome Web Store, then you just add the
+
+6
+00:00:26,000 --> 00:00:32,000
+link in your head tag of your page that links to the Chrome Web Store with your extensions unique ID.
+
+7
+00:00:32,000 --> 00:00:40,000
+Finally, you can just call chrome.webstore.install to allow the user to install the extension in some JavaScript code.
+
+8
+00:00:40,000 --> 00:00:42,000
+There are a couple of other restrictions that you should know about though.
+
+9
+00:00:42,000 --> 00:00:48,000
+First, you need to make sure your site is verified with the Google Site Master Tools, and second,
+
+10
+00:00:48,000 --> 00:00:53,000
+the user has to initiate the action for your call to chrome.webstore.install.
+
+11
+00:00:53,000 --> 00:00:58,000
+So in other words, you can't just run this script when someone comes to your page; they have to click
+
+12
+00:00:58,000 --> 00:01:03,000
+a button or do something else to initiate it. You can find the complete documentation with all the details
+
+13
+00:01:03,000 --> 00:59:00,000
+at this link, but it's pretty simple and easy to do.
+

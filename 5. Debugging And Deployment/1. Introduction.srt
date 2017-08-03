@@ -1,0 +1,36 @@
+1
+00:00:01,000 --> 00:00:08,000
+Hi, this is John Sonmez from Pluralsight, and in this module we'll be learning about how to Debug and Deploy
+
+2
+00:00:08,000 --> 00:00:14,000
+our Chrome Extensions. One thing you may have encountered while trying to create an extension is something
+
+3
+00:00:14,000 --> 00:00:19,000
+going wrong and not knowing how to figure it out. Extensions operate mostly in the background, so they can
+
+4
+00:00:19,000 --> 00:00:26,000
+be difficult to troubleshoot if you don't know how. Fortunately, debugging extensions is not that hard and
+
+5
+00:00:26,000 --> 00:00:32,000
+we'll go through the process of seeing how to debug extensions we've created using the Chrome Dev Tools.
+
+6
+00:00:32,000 --> 00:00:37,000
+And once you've got your extensions working the way you want, you'll probably want to be able to deploy an extension.
+
+7
+00:00:37,000 --> 00:00:42,000
+I'll show you everything you need to know about packaging up your finished extension and either hosting it
+
+8
+00:00:42,000 --> 00:00:47,000
+on your own website for distribution or putting it in the Chrome Web Store.
+
+9
+00:00:47,000 --> 00:59:00,000
+By the end of this module, you should know everything you need to know to create, debug, and deploy chrome extensions.
+

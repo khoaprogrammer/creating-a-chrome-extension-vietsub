@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:06,000
+Okay, so now we should be able to go over here and reload our extension.
+
+2
+00:00:06,000 --> 00:00:15,000
+So we're just going to go into Extensions and Pluralsight Helper, and now if we go to Pluralsight,
+
+3
+00:00:15,000 --> 00:00:16,000
+and we go to, let's say the
+
+4
+00:00:16,000 --> 00:00:23,000
+Top 100 Leaderboard, we can see that our CSS is being applied, we've got our pageAction, but if I click this
+
+5
+00:00:23,000 --> 00:00:30,000
+‘Add course counts', now you can see that instantly I have basically gotten all of the counts for each
+
+6
+00:00:30,000 --> 00:00:36,000
+author so we can see how many courses that they have on the Top 100.
+
+7
+00:00:36,000 --> 00:00:42,000
+And you can see here that Scott Allen is still dominating the Top 100 with 14 courses up there,
+
+8
+00:00:42,000 --> 00:00:49,000
+so this is pretty neat; we can actually apply this to the new releases page as well.
+
+9
+00:00:49,000 --> 00:00:54,000
+And this has actually all the courses that have been released on Pluralsight from day one, so it's pretty
+
+10
+00:00:54,000 --> 00:01:01,000
+interesting if we do this one. We can get the courseCounts for every single author, so you can see
+
+11
+00:01:01,000 --> 00:01:06,000
+how many courses each author has done, what their total number of courses is.
+
+12
+00:01:06,000 --> 00:01:12,000
+And just to recap real quick what's happening when we're doing this is, when we click this button here this
+
+13
+00:01:12,000 --> 00:01:18,000
+‘Add course counts', it's basically figuring out what the active tab is, it's sending a message to the
+
+14
+00:01:18,000 --> 00:01:24,000
+content script here, so this content script receives the message, and then it executes the JavaScript that's
+
+15
+00:01:24,000 --> 00:01:30,000
+going to manipulate this page. Our actual UI here, the JavaScript behind this, can't manipulate the page
+
+16
+00:01:30,000 --> 00:01:38,000
+directly; it's not even really attached directly to a page, it's attached to our extension to our actual
+
+17
+00:01:38,000 --> 00:01:43,000
+pageAction, so we have to use this indirection, we have to use the message passing in order to be able to
+
+18
+00:01:43,000 --> 00:59:00,000
+get access to the actual page.
+

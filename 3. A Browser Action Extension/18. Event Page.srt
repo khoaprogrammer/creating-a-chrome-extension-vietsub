@@ -1,0 +1,44 @@
+1
+00:00:01,000 --> 00:00:07,000
+Often when creating an extension, you'll need some JavaScript code to run when the extension first loads
+
+2
+00:00:07,000 --> 00:00:14,000
+before a user clicks the icon in the toolbar. In that case, a Background Page is needed.
+
+3
+00:00:14,000 --> 00:00:19,000
+As we talked about earlier, there are two types of background pages - persistent ones called Background Pages
+
+4
+00:00:19,000 --> 00:00:26,000
+and Event Pages, which are only activated at certain times. In most cases, you can get away with just using
+
+5
+00:00:26,000 --> 00:00:30,000
+an Event Page and it's preferred because it takes up less resources.
+
+6
+00:00:30,000 --> 00:00:35,000
+We'll be using an Event Page in our extension to register for any changes to the protein total and
+
+7
+00:00:35,000 --> 00:00:41,000
+update the badge that shows the current total, like you can see here, any time it changes.
+
+8
+00:00:41,000 --> 00:00:47,000
+We'll also use the Event Page to register a new context menu item, like you can see here,
+
+9
+00:00:47,000 --> 00:00:51,000
+that will be displayed when a user has selected some text and right-clicks.
+
+10
+00:00:51,000 --> 00:00:56,000
+We'll add an event handler that will respond to that menu item being selected,
+
+11
+00:00:56,000 --> 00:59:00,000
+which will attempt to add the selected text as a protein amount if the text is a number.
+

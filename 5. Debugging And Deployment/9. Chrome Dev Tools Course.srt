@@ -1,0 +1,24 @@
+1
+00:00:01,000 --> 00:00:06,000
+Well as you can see, the ability to debug chrome extensions relies partly on your ability to use the Chrome
+
+2
+00:00:06,000 --> 00:00:11,000
+Developer Tools. We don't have time in this course to cover all the features of the tools, but if you want
+
+3
+00:00:11,000 --> 00:00:18,000
+to learn more about the Chrome Dev Tools, check out my course on using the Chrome Developer Tools that you can find here.
+
+4
+00:00:18,000 --> 00:00:24,000
+In that course, I go over almost all the features of the developer tools and show you how to maximize your use of them.
+
+5
+00:00:24,000 --> 00:00:29,000
+If you use Chrome a lot for web development, you should definitely learn more about the Chrome Developer Tools,
+
+6
+00:00:29,000 --> 00:59:00,000
+because they can make your job much easier.
+

@@ -1,0 +1,72 @@
+1
+00:00:02,000 --> 00:00:07,000
+Okay, let's go ahead and get started. We're going to start just like we did with the other extensions by
+
+2
+00:00:07,000 --> 00:00:13,000
+creating our extension directory first. So what I'm going to do is I'm going to create a new directory here
+
+3
+00:00:13,000 --> 00:00:21,000
+called PluralsightHelper. And inside here, we're going to start off by creating our manifest file.
+
+4
+00:00:21,000 --> 00:00:33,000
+So, we're just going to do a ‘New Text Document' and we'll call this manifest.json.
+
+5
+00:00:33,000 --> 00:00:37,000
+Okay, and we'll go ahead and open this up; I'm just going to edit this in Visual Studio.
+
+6
+00:00:37,000 --> 00:00:41,000
+Like I said, you can use whatever editor that you want, and we're just going to create our manifest file
+
+7
+00:00:41,000 --> 00:00:52,000
+just like we've done before. And remember that we want to start with our manifest_version, which is 2,
+
+8
+00:00:52,000 --> 00:00:56,000
+and then we're going to want to add our name here, so the name for this one, we're going to call this
+
+9
+00:00:56,000 --> 00:01:10,000
+Pluralsight Helper, and then we want to have a description and we'll just make this say "Adds functionality
+
+10
+00:01:10,000 --> 00:01:21,000
+to the Pluralsight website." And don't forget your commas. And then we're going to say that this is
+
+11
+00:01:21,000 --> 00:01:30,000
+version 1.0 of our extension. Okay, now we're just going to start off by creating a page action,
+
+12
+00:01:30,000 --> 00:01:36,000
+so I'm just going to go ahead and add this page action section right now to our manifest, so we're going to say,
+
+13
+00:01:36,000 --> 00:01:41,000
+page_action, and we're going to do this instead of that browser action.
+
+14
+00:01:41,000 --> 00:01:46,000
+We can't have a page action and a browser action; obviously for an extension it has to be in one place or the other.
+
+15
+00:01:46,000 --> 00:01:53,000
+So then we're going to put in our default_icon and we'll just call this icon.png; I've already created an
+
+16
+00:01:53,000 --> 00:02:02,000
+icon that we can use here, and then we're going to put a default_title in here; this'll be just a title of this page action,
+
+17
+00:02:02,000 --> 00:02:09,000
+which will be Pluralsight Helper. Then we're going to add a default popup, so we're going to say,
+
+18
+00:02:09,000 --> 00:59:00,000
+default_popup, and this works just like it did for the browser action; we're just going to call this popup.html.
+

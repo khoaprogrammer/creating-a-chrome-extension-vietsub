@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:06,000
+Well we've finally reached the end of this course. We've covered many of the features of Chrome Extensions
+
+2
+00:00:06,000 --> 00:00:11,000
+and seen the power of Chrome Extensions as we've created our own extensions, both Browser Action Extensions
+
+3
+00:00:11,000 --> 00:00:17,000
+that are always available and Page Action Extensions designed to work on certain pages or certain conditions.
+
+4
+00:00:17,000 --> 00:00:24,000
+We also saw how easy it is to use the Chrome Extensions to modify an existing page and finally how to debug
+
+5
+00:00:24,000 --> 00:00:26,000
+and deploy them. I hope you've enjoyed this course.
+
+6
+00:00:26,000 --> 00:00:33,000
+I really like how easy it is to use and create Chrome Extensions and I find that they're really powerful ways
+
+7
+00:00:33,000 --> 00:00:40,000
+of extending Chrome and even adding extra capabilities to web pages that you wouldn't otherwise be able to alter.
+
+8
+00:00:40,000 --> 00:59:00,000
+Good luck creating your own Chrome Extensions, and thanks for watching! Take care.
+

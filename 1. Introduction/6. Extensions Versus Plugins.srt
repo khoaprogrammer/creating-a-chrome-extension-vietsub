@@ -1,0 +1,80 @@
+1
+00:00:01,000 --> 00:00:06,000
+I mentioned that I'd show you the difference between extension and a plugin just so you could see for yourself.
+
+2
+00:00:06,000 --> 00:00:12,000
+So, let's go ahead and take a quick look. So, it you do a chrome://extensions
+
+3
+00:00:12,000 --> 00:00:15,000
+you'll see all of the extensions here.
+
+4
+00:00:15,000 --> 00:00:21,000
+But, just to show you they are different, if you do chrome://plugins
+
+5
+00:00:21,000 --> 00:00:27,000
+you'll see that this is quite different. In fact, you have Adobe Flash Player as a common plugin
+
+6
+00:00:27,000 --> 00:00:33,000
+that ships with Chrome. And here if you hit this you can see the details, but your default view would be here
+
+7
+00:00:33,000 --> 00:00:39,000
+where you don't see the details. But, you can see that these are actual plugins and plugins are different
+
+8
+00:00:39,000 --> 00:00:45,000
+than extensions. These are going to be accessing your computer outside of the sandbox.
+
+9
+00:00:45,000 --> 00:00:50,000
+This could be a lot more dangerous. In fact, a lot of vulnerabilities come through the Flash plugin.
+
+10
+00:00:50,000 --> 00:00:54,000
+If you've heard of some of the exploits that have happened with some of the common browsers,
+
+11
+00:00:54,000 --> 00:00:56,000
+a lot of times it's through a plugin.
+
+12
+00:00:56,000 --> 00:01:02,000
+So, you can see that plugins are definitely not the preferred way to extend the capabilities of Chrome.
+
+13
+00:01:02,000 --> 00:01:08,000
+Now, sometimes you do need a plugin, sometimes you don't have a choice and you can, through an extension,
+
+14
+00:01:08,000 --> 00:01:11,000
+register a plugin, but we're not going to cover that in this course.
+
+15
+00:01:11,000 --> 00:01:18,000
+It is a rare occurrence though unless you're doing something like creating your own Flash Player or something
+
+16
+00:01:18,000 --> 00:01:24,000
+of the level of, for example, the Microsoft Office plugin which is able to launch Microsoft Office
+
+17
+00:01:24,000 --> 00:01:29,000
+documents from Chrome and things like that, you probably don't need to create a plugin.
+
+18
+00:01:29,000 --> 00:01:35,000
+You can probably create an extension instead which is a lot easier to do and is a lot safer.
+
+19
+00:01:35,000 --> 00:01:41,000
+So, if you want to ever see the difference, you can just go to extensions or plugins and here you can
+
+20
+00:01:41,000 --> 00:59:00,000
+manage either one of them.
+

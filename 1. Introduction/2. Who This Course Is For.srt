@@ -1,0 +1,52 @@
+1
+00:00:01,000 --> 00:00:07,000
+One of the nice things about Chrome extensions is that they're actually very easy to create.
+
+2
+00:00:07,000 --> 00:00:14,000
+Chrome extensions are made using web technologies you're already probably familiar with like, HTML, CSS,
+
+3
+00:00:14,000 --> 00:00:21,000
+and JavaScript. That means that just about anyone with some basic web skills, regardless of their primary
+
+4
+00:00:21,000 --> 00:00:27,000
+programing language background, or choice of technology stack, can learn to create Chrome extensions.
+
+5
+00:00:27,000 --> 00:00:33,000
+You'll need to be at least somewhat familiar with HTML, CSS, and JavaScript to get the most out of this
+
+6
+00:00:33,000 --> 00:00:38,000
+course though, since we won't be covering the basics here. Other than that small requirement,
+
+7
+00:00:38,000 --> 00:00:43,000
+this course is basically for everyone. It doesn't matter if you're a .NET developer or Java developer or
+
+8
+00:00:43,000 --> 00:00:48,000
+even prefer Ruby or Python. Since Chrome extensions only use the web technologies, everything in this course
+
+9
+00:00:48,000 --> 00:00:54,000
+will apply equally well. Another benefit of Chrome's easy to create extensions are that you can learn to
+
+10
+00:00:54,000 --> 00:00:59,000
+create extensions for a variety of different reasons. Unlike some technologies that require deep
+
+11
+00:00:59,000 --> 00:01:06,000
+understanding of a framework and lots of study. The simplicity of this topic opens up the possibility of
+
+12
+00:01:06,000 --> 00:01:12,000
+creating Chrome extensions for just even personal use. Plus, as an added bonus, you'll look like a genius
+
+13
+00:01:12,000 --> 00:59:00,000
+when you show your boss the Chrome extensions you made over the weekend for your specific software.
+

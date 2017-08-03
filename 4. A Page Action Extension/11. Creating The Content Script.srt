@@ -1,0 +1,160 @@
+1
+00:00:00,000 --> 00:00:05,000
+Okay, so now let's go ahead and actually add our content script.
+
+2
+00:00:05,000 --> 00:00:08,000
+So we're just going to go ahead and go to our directory here.
+
+3
+00:00:08,000 --> 00:00:21,000
+And we're going to create a file, so let's do a ‘New Text Document' and we're going to call this Pluralsight_cs.js.
+
+4
+00:00:21,000 --> 00:00:23,000
+Now we're going to go ahead and
+
+5
+00:00:23,000 --> 00:00:30,000
+open this up, and by the way with our content script, if it's going to run on Pluralsight, we do have to
+
+6
+00:00:30,000 --> 00:00:38,000
+add a permission for this as well in order to be able to give our extension permission to operate on any
+
+7
+00:00:38,000 --> 00:00:42,000
+of those sites that we want to use this from. So let's go ahead and do that real quick before we actually
+
+8
+00:00:42,000 --> 00:00:47,000
+implement our content script. So all we're going to do is we're going to give it a general permission for
+
+9
+00:00:47,000 --> 00:00:59,000
+Pluralsight, so we're just going to add here http://Pluralsight.com/*, so that'll make sure that it has
+
+10
+00:00:59,000 --> 00:01:02,000
+permission for anything it needs to do on Pluralsight.
+
+11
+00:01:02,000 --> 00:01:11,000
+Now inside here, what we actually want to do is we're going to want to basically send a message to our
+
+12
+00:01:11,000 --> 00:01:15,000
+eventPage that's going to tell it to go ahead and display the page_action.
+
+13
+00:01:15,000 --> 00:01:20,000
+All this at this point is just to get the page action being displayed correctly.
+
+14
+00:01:20,000 --> 00:01:27,000
+Now remember, our content script is going to run on these particular pages, so it's going to immediately run
+
+15
+00:01:27,000 --> 00:01:33,000
+this JavaScript, and what we're going to do by doing this is make sure that our page_action only shows up
+
+16
+00:01:33,000 --> 00:01:37,000
+when we're at one of these URLs or a URL that matches one of these.
+
+17
+00:01:37,000 --> 00:01:47,000
+So, we're going to go into our Pluralsight_cs.js and here what we want to do is basically just send a message
+
+18
+00:01:47,000 --> 00:01:58,000
+that says to show. Okay, so what we're going to do inside here is we're just going to do chrome.runtime.sendMessage
+
+19
+00:01:58,000 --> 00:02:02,000
+and then here we can send a message and it can basically be any object.
+
+20
+00:02:02,000 --> 00:02:08,000
+So we're just going to create an object that we're going to have a property called action on and we're going
+
+21
+00:02:08,000 --> 00:02:15,000
+to set the action equal to show. You could do whatever kind of format you wanted in order to make this work.
+
+22
+00:02:15,000 --> 00:02:20,000
+I'm just going to use this so that we'll have some convention of we're going to check what the action is,
+
+23
+00:02:20,000 --> 00:02:27,000
+the action is going to say what that particular action should be, so we're basically just sending this show message.
+
+24
+00:02:27,000 --> 00:02:33,000
+Now remember, this script is going to run on any page that matches this matches here.
+
+25
+00:02:33,000 --> 00:02:38,000
+So, as soon as this runs, it's going to be sending this message that's going to say show.
+
+26
+00:02:38,000 --> 00:02:45,000
+Then on our eventPage, we want to go ahead and receive this message and check for that show action.
+
+27
+00:02:45,000 --> 00:02:51,000
+If it's a show, then we're going to go head and actually show it — we don't want to show this always.
+
+28
+00:02:51,000 --> 00:02:54,000
+So instead of just executing this code, we're going to change this now and we're going to say,
+
+29
+00:02:54,000 --> 00:03:04,000
+chrome.runtime.onMessage, addListener, so this is going to add a listener for us, and this is going to take
+
+30
+00:03:04,000 --> 00:03:10,000
+a function, this will be our callback, which will give us the request, it'll give us the sender, and we can
+
+31
+00:03:10,000 --> 00:03:17,000
+send a response. Now we won't actually need to send a response in our case, so then we're going to go ahead
+
+32
+00:03:17,000 --> 00:03:26,000
+and actually put this all inside here and we want to check to see if the request.action is equal to show
+
+33
+00:03:26,000 --> 00:03:29,000
+before we do anything, and then let's go ahead and end this correctly.
+
+34
+00:03:29,000 --> 00:03:33,000
+Okay, so now let's talk real quick about what's going to happen here.
+
+35
+00:03:33,000 --> 00:03:40,000
+So, we're going to load up a page; when we load up that page, if it matches here, it's going to run
+
+36
+00:03:40,000 --> 00:03:42,000
+these two scripts — this Pluralsight one and this jQuery one.
+
+37
+00:03:42,000 --> 00:03:52,000
+This Pluralsight one, if it runs, it will send a message that has an action set to show and then this
+
+38
+00:03:52,000 --> 00:03:57,000
+eventPage has already registered to receive any messages. So any messages that come through it's going to
+
+39
+00:03:57,000 --> 00:04:02,000
+receive, it's going to check to see if it gets show, and if it does then it's going to figure out what
+
+40
+00:04:02,000 --> 00:59:00,000
+the currentWindow, current activeTab is, and it's going to show the pageAction for that.
+

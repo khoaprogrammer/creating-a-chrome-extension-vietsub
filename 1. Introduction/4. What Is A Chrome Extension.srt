@@ -1,0 +1,64 @@
+1
+00:00:01,000 --> 00:00:06,000
+Let's start off by talking about what exactly a Chrome extension is.
+
+2
+00:00:06,000 --> 00:00:14,000
+Chrome extensions really can be thought of as the way Google provides for extending the capabilities of Chrome.
+
+3
+00:00:14,000 --> 00:00:18,000
+Extensions are often confused with plugins which are quite different.
+
+4
+00:00:18,000 --> 00:00:25,000
+Many developers mistakenly confuse them as the same, but in a minute I'll show you the difference in Chrome itself.
+
+5
+00:00:25,000 --> 00:00:29,000
+There is quite a bit of debate across the web about the actual differences,
+
+6
+00:00:29,000 --> 00:00:36,000
+but the easy way to conceptualize it is to think of plugins as running outside of the sandbox context of
+
+7
+00:00:36,000 --> 00:00:42,000
+the browser and interacting with the browser. Extensions on the other hand, run within the browser
+
+8
+00:00:42,000 --> 00:00:47,000
+and conform to a specific set of APIs and capabilities exposed by Chrome.
+
+9
+00:00:47,000 --> 00:00:53,000
+This isn't to say that a Chrome extension can't ever do anything bad and it completely safe,
+
+10
+00:00:53,000 --> 00:00:57,000
+but you have a lot more assurance with most Chrome extensions that they're going to be safe to run,
+
+11
+00:00:57,000 --> 00:01:01,000
+especially if the extension is obtained from the Chrome Web Store.
+
+12
+00:01:01,000 --> 00:01:07,000
+Chrome extensions can be used for a variety of different purposes and can behave differently.
+
+13
+00:01:07,000 --> 00:01:12,000
+But, in general, Chrome extensions somehow expand the capabilities of the browser.
+
+14
+00:01:12,000 --> 00:01:18,000
+This could be through the creation of a sort of in-browser app that's accessed from the Chrome toolbar,
+
+15
+00:01:18,000 --> 00:01:23,000
+complete with its own UI, through injecting JavaScript into loaded pages,
+
+16
+00:01:23,000 --> 00:59:00,000
+or even changing some of the default behaviors of Chrome.
+

@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:07,000
+All extensions can have an Options Page that can be accessed by right-clicking on the Extension icon.
+
+2
+00:00:07,000 --> 00:00:13,000
+In order to create an Options Page, we simply add an entry to the manifest file that specifies the name of
+
+3
+00:00:13,000 --> 00:00:21,000
+the HTML page to use as an Options Page. We can then create an HTML page that we want to display in a new tab
+
+4
+00:00:21,000 --> 00:00:26,000
+when the Options Page is requested. We can implement any functionality we desire on this Options Page;
+
+5
+00:00:26,000 --> 00:00:32,000
+in our case, we'll be showing the current goal and giving the user the ability to change the goal and save it
+
+6
+00:00:32,000 --> 00:59:00,000
+and also the ability to reset the current total.
+

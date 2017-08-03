@@ -1,0 +1,40 @@
+1
+00:00:01,000 --> 00:00:06,000
+Content scripts are scripts that are executed when certain pages load in the browser.
+
+2
+00:00:06,000 --> 00:00:13,000
+These scripts can be used to essentially inject JavaScript into a page to modify its behavior or user interface.
+
+3
+00:00:13,000 --> 00:00:17,000
+The content script essentially becomes part of the page that was loaded.
+
+4
+00:00:17,000 --> 00:00:22,000
+This means a content script is going to behave like any other script on the page.
+
+5
+00:00:22,000 --> 00:00:29,000
+So, content scripts can't directly modify the DOM of the HTML pages packaged with the extension,
+
+6
+00:00:29,000 --> 00:00:36,000
+like UI pages and background pages can. But, content scripts can send messages back to the parent extension
+
+7
+00:00:36,000 --> 00:00:43,000
+to ask pages in the paired extension to modify a UI page or perform some extension-related functionality.
+
+8
+00:00:43,000 --> 00:00:50,000
+Likewise, a background page or UI page can send a message to a content script to cause it to perform an action
+
+9
+00:00:50,000 --> 00:00:55,000
+on the page it's running on. We'll look more at content scripts when we utilize them to implement an
+
+10
+00:00:55,000 --> 00:59:00,000
+extension in Module 4.
+

@@ -1,0 +1,28 @@
+1
+00:00:01,000 --> 00:00:04,000
+Now deploying to the Chrome Web Store definitely has fewer pitfalls.
+
+2
+00:00:04,000 --> 00:00:10,000
+All you need to do to deploy to the Chrome Web Store is log into the Chrome Developer Dashboard and upload
+
+3
+00:00:10,000 --> 00:00:16,000
+the Extension directory. Even most of the details on the Extensions Product page are optional, although you
+
+4
+00:00:16,000 --> 00:00:20,000
+should probably fill them out if you want someone to actually be able to find and use your extension.
+
+5
+00:00:20,000 --> 00:00:26,000
+From the Chrome Web Store, you can even do a semi-private deployment by making it so your extension only
+
+6
+00:00:26,000 --> 00:00:30,000
+is accessible through a direct link and it's not searchable in the store.
+
+7
+00:00:30,000 --> 00:59:00,000
+I'll take you through the basics of this process next.
+

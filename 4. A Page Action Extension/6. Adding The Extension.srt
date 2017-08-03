@@ -1,0 +1,40 @@
+1
+00:00:01,000 --> 00:00:04,000
+Okay, so now let's go ahead and load this extension into Chrome.
+
+2
+00:00:04,000 --> 00:00:09,000
+We do need one last thing before we do this — we need to copy our icon in here.
+
+3
+00:00:09,000 --> 00:00:14,000
+I just went ahead and created this icon, it's just a little Pluralsight icon with a plus here to indicate
+
+4
+00:00:14,000 --> 00:00:22,000
+it's Pluralsight Helper, and so now that we have that, we can go ahead and do this ‘Load unpacked extension'
+
+5
+00:00:22,000 --> 00:00:29,000
+and then we're going to look for our extension, which is Pluralsight Helper, click OK, and we should see
+
+6
+00:00:29,000 --> 00:00:35,000
+Pluralsight Helper is showing up in here. Now, we're not going to see anything at this point,
+
+7
+00:00:35,000 --> 00:00:42,000
+because remember, unlike a browser action that shows up automatically inside here, a page action is going to
+
+8
+00:00:42,000 --> 00:00:47,000
+show up right here at the end of this address bar, but it's only going to show up when we actually show it.
+
+9
+00:00:47,000 --> 00:00:51,000
+So we actually have to implement some JavaScript that's going to tell Chrome to show this; otherwise,
+
+10
+00:00:51,000 --> 00:59:00,000
+we're not going to actually even see anything from our extension at this point.
+

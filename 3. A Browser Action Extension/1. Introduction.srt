@@ -1,0 +1,28 @@
+1
+00:00:01,000 --> 00:00:07,000
+Hi, this is John Sonmez from Pluralsight, and in this module we'll be creating a Browser Action Extension.
+
+2
+00:00:07,000 --> 00:00:12,000
+In the last module, we also created a browser action extension, but it was pretty simple and didn't really
+
+3
+00:00:12,000 --> 00:00:18,000
+use any of the chrome APIs. This time, though, we'll be expanding on what we learned from our first extension
+
+4
+00:00:18,000 --> 00:00:24,000
+and be building a more robust extension that uses the chrome storage APIs for storing and syncing data.
+
+5
+00:00:24,000 --> 00:00:31,000
+The browser action badge has an options page and even uses an event page that runs in the background to register
+
+6
+00:00:31,000 --> 00:00:37,000
+for events. By the end of this module, you should have a pretty good idea of how to create a more complex
+
+7
+00:00:37,000 --> 00:59:00,000
+browser action extension and be familiar with some of the capabilities of the chrome API.
+

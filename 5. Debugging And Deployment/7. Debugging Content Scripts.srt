@@ -1,0 +1,44 @@
+1
+00:00:01,000 --> 00:00:05,000
+Okay, and there's one other type of script, which we haven't talked about so far, which is a content script.
+
+2
+00:00:05,000 --> 00:00:12,000
+Now these content scripts get injected into the page, so you can actually debug them directly from the
+
+3
+00:00:12,000 --> 00:00:19,000
+Developer console for the page. So, for example, with our Top 100 Leaderboard, if I go in here and I go to
+
+4
+00:00:19,000 --> 00:00:25,000
+Sources in the Developer tools, you'll notice that there is this Content tab.
+
+5
+00:00:25,000 --> 00:00:32,000
+Inside here, these are the unique IDs for each extension. So if we look through these, we can probably find our extension.
+
+6
+00:00:32,000 --> 00:00:38,000
+And you can see that our extension is actually this first one and you can see the scripts are loaded,
+
+7
+00:00:38,000 --> 00:00:45,000
+including our Pluralsight_cs.js. So we can actually debug in here as well, so you just have to remember that
+
+8
+00:00:45,000 --> 00:00:50,000
+the content scripts are going to be part of the page, so you're going to debug them like part of the page.
+
+9
+00:00:50,000 --> 00:00:55,000
+For the UI stuff, you're going to either just right-click on this and do ‘Inspect element' or you can
+
+10
+00:00:55,000 --> 00:00:57,000
+right-click and do ‘Inspect popup',
+
+11
+00:00:57,000 --> 00:59:00,000
+and then for the background pages, you do have to reach that from the Extensions screen.
+

@@ -1,0 +1,28 @@
+1
+00:00:01,000 --> 00:00:05,000
+Now one last thing I wanted to mention real quick is using Google Analytics.
+
+2
+00:00:05,000 --> 00:00:11,000
+You can actually use Google Analytics in your actual extension, so you can track things like page views,
+
+3
+00:00:11,000 --> 00:00:16,000
+as well as events that happen in your extension so you can see how users are using your extension.
+
+4
+00:00:16,000 --> 00:00:22,000
+We're not going to go over the details of that in this course, but if you do want to find out more you can go
+
+5
+00:00:22,000 --> 00:00:32,000
+to developer.chrome.com/extensions/tut_analytics.html and here is a quick tutorial that shows you how to do this.
+
+6
+00:00:32,000 --> 00:00:36,000
+It's really useful to be able to do this, it's pretty simple to do as well, it's just some JavaScript code
+
+7
+00:00:36,000 --> 00:59:00,000
+that you're basically going to insert into your extension.
+

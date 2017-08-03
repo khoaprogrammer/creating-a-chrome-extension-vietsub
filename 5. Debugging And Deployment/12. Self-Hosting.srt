@@ -1,0 +1,84 @@
+1
+00:00:01,000 --> 00:00:06,000
+Self-hosting is not quite as easy as it used to be, as the newer versions of Chrome have made it more
+
+2
+00:00:06,000 --> 00:00:09,000
+difficult to install an extension that isn't from the Chrome Web Store.
+
+3
+00:00:09,000 --> 00:00:15,000
+As a result, you should only really use self-hosting if you have to, because it's more difficult and
+
+4
+00:00:15,000 --> 00:00:18,000
+error-prone than the other options, plus it's less secure for users.
+
+5
+00:00:18,000 --> 00:00:24,000
+Extensions, of course, can do many bad things, so it makes sense that Google would encourage using the
+
+6
+00:00:24,000 --> 00:00:28,000
+Chrome Web Store for distribution, but if you do want to do self-hosting or you have to, here are some
+
+7
+00:00:28,000 --> 00:00:33,000
+things to be aware of. First, you'll want to configure autoupdate in your manifest file.
+
+8
+00:00:33,000 --> 00:00:39,000
+You can find instructions on how to do this here. It involves creating an entry in your manifest file,
+
+9
+00:00:39,000 --> 00:00:44,000
+as well as creating another xml manifest that you use to indicate what the current version is and where
+
+10
+00:00:44,000 --> 00:00:49,000
+to download the extension. This will ensure that your extension gets updated automatically.
+
+11
+00:00:49,000 --> 00:00:56,000
+When using web store, you don't have to worry about this. Next, you need to allow your extension to be
+
+12
+00:00:56,000 --> 00:01:00,000
+installed from your site. By default, Chrome blocks all extensions from being installed that don't have
+
+13
+00:01:00,000 --> 00:01:04,000
+explicit permissions specified for the domain that extension is coming from.
+
+14
+00:01:04,000 --> 00:01:10,000
+You could follow this link to see how to set those permissions for each operating system.
+
+15
+00:01:10,000 --> 00:01:15,000
+This requirement is probably the biggest reason self-hosting is a hassle; it requires actually modifying
+
+16
+00:01:15,000 --> 00:01:21,000
+the Chrome install itself. Next, you need to make sure you keep your private key that was used when you
+
+17
+00:01:21,000 --> 00:01:24,000
+packaged the extension. This is required to update the extension.
+
+18
+00:01:24,000 --> 00:01:30,000
+And finally, you can actually install an extension without the extra security change to the extension
+
+19
+00:01:30,000 --> 00:01:36,000
+install source if it's manually done. This can be done by opening up the Settings page in Chrome and
+
+20
+00:01:36,000 --> 00:01:42,000
+manually dragging the crx file into it. If you have to have your extension self-hosted and you can't
+
+21
+00:01:42,000 --> 00:59:00,000
+modify the extension install source for the user's Chrome installation, you may need to resort to this approach.
+

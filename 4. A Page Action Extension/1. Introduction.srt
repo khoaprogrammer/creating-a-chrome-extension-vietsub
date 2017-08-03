@@ -1,0 +1,44 @@
+1
+00:00:01,000 --> 00:00:09,000
+Hi, this is John Sonmez from Pluralsight, and in this module I'll be showing you how to create a Page Action Extension.
+
+2
+00:00:09,000 --> 00:00:15,000
+So far we've created two browser action extensions, and while browser action extensions are useful,
+
+3
+00:00:15,000 --> 00:00:20,000
+we don't always need our extension to be available on every page we visit in Chrome.
+
+4
+00:00:20,000 --> 00:00:26,000
+By creating an extension that uses a page action instead of the browser action, we can create extensions
+
+5
+00:00:26,000 --> 00:00:34,000
+that are more tailored to specific content on web pages or specific web pages that will be displayed and add
+
+6
+00:00:34,000 --> 00:00:40,000
+functionality conditionally. This is a very powerful way to build chrome extensions, because it allows us
+
+7
+00:00:40,000 --> 00:00:46,000
+to create extensions that aren't always taking up space on the toolbar and are able to show up at the right time
+
+8
+00:00:46,000 --> 00:00:52,000
+to do something useful. I'll also be showing you how to use content scripts, which are another powerful
+
+9
+00:00:52,000 --> 00:01:01,000
+tool in the Chrome Extensions toolbox that allows us to actually inject JavaScript in CSS into an active page
+
+10
+00:01:01,000 --> 00:01:07,000
+to change it however we like. By the end of this module, you should be able to create your own
+
+11
+00:01:07,000 --> 00:59:00,000
+page action-based extension, understand how to pass messages, and utilize content scripts.
+

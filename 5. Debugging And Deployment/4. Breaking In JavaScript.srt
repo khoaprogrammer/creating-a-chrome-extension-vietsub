@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:04,000
+Now let's look at an example of how you might actually utilize this to figure out something that might be
+
+2
+00:00:04,000 --> 00:00:11,000
+going on here; so for example, what we can do here with our Protein Tracker is we can go to our Sources
+
+3
+00:00:11,000 --> 00:00:17,000
+and this popup.js, and from here, we can actually make some changes or set breakpoints.
+
+4
+00:00:17,000 --> 00:00:23,000
+So, let's go ahead and just set a breakpoint here and let's say that we want to figure out what's going on.
+
+5
+00:00:23,000 --> 00:00:29,000
+Let's set a breakpoint, let's say right there. So now what we can do is we can basically type in something here
+
+6
+00:00:29,000 --> 00:00:33,000
+and click this ‘Add Protein' and you'll see that we're hitting this breakpoint, so we're actually debugging
+
+7
+00:00:33,000 --> 00:00:41,000
+this in this JavaScript debugger, and we can do all kinds of things like we can look at our scope variables.
+
+8
+00:00:41,000 --> 00:00:47,000
+So here we have our local variable, so we can see what the amount - it's set to 123, we can see our items,
+
+9
+00:00:47,000 --> 00:00:51,000
+we can basically go through here and even step through this if we wanted to.
+
+10
+00:00:51,000 --> 00:00:57,000
+And we're not going to go through all of the features of the Chrome Developer Tools here, but you basically
+
+11
+00:00:57,000 --> 00:01:03,000
+have the entire capability of the Chrome Developer Tools at your disposal to be able to debug these extensions.
+
+12
+00:01:03,000 --> 00:01:08,000
+So if you know how to use the Chrome Developer Tools, and I'll show you in a minute a resource that you can
+
+13
+00:01:08,000 --> 00:01:14,000
+use to find out more about it, but if you do use the Chrome Developer Tools, you'll find that debugging
+
+14
+00:01:14,000 --> 00:59:00,000
+an extension really isn't much different than debugging any web page.
+

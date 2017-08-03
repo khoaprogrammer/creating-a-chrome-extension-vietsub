@@ -1,0 +1,44 @@
+1
+00:00:01,000 --> 00:00:06,000
+So now you should have the basic knowledge about Chrome extensions needed to create our own extensions.
+
+2
+00:00:06,000 --> 00:00:13,000
+Chrome extensions are basically just a collection of HTML, CSS, and JavaScript packaged with a manifest file
+
+3
+00:00:13,000 --> 00:00:17,000
+that tells Chrome how to integrate their functionality into the browser.
+
+4
+00:00:17,000 --> 00:00:23,000
+But, as we talked about in this module, extensions are pretty powerful and can utilize the Chrome APIs to
+
+5
+00:00:23,000 --> 00:00:28,000
+control and manipulate many aspects of the browser. We also talked about the three parts of the
+
+6
+00:00:28,000 --> 00:00:34,000
+Chrome extension; the background pages, UI pages, and content scripts.
+
+7
+00:00:34,000 --> 00:00:39,000
+But we'll be looking more in depth into each of these as we utilize them and some of the extensions we'll
+
+8
+00:00:39,000 --> 00:00:45,000
+be creating later in this course. Up next, we'll be creating a very basic Hello World extension to see how
+
+9
+00:00:45,000 --> 00:00:52,000
+all the technology of a Chrome extension works and get you familiar with working with extensions before we
+
+10
+00:00:52,000 --> 00:00:58,000
+get into the details of the Chrome API or the JavaScript code used to interact with it.
+
+11
+00:00:58,000 --> 00:59:00,000
+Thanks for joining me and take care.
+

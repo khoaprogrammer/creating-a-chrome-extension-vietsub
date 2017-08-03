@@ -1,0 +1,56 @@
+1
+00:00:01,000 --> 00:00:04,000
+Chrome extensions can be generally broken up into three main parts.
+
+2
+00:00:04,000 --> 00:00:10,000
+A background page, UI pages, and content scripts. Let's talk about each one of these important components
+
+3
+00:00:10,000 --> 00:00:13,000
+in a little more detail.
+
+4
+00:00:13,000 --> 00:00:19,000
+First we have background pages. A Chrome extensions can have a background page which is basically an HTML page
+
+5
+00:00:19,000 --> 00:00:25,000
+that runs in the background. Typically, a background page will have some JavaScript code in it
+
+6
+00:00:25,000 --> 00:00:31,000
+that will be used to control the capabilities of the extension when it's active from the Chrome UI.
+
+7
+00:00:31,000 --> 00:00:36,000
+You can actually see a list of the background pages running from Chrome using the Chrome Task Manager
+
+8
+00:00:36,000 --> 00:00:42,000
+as you can see here. Background pages can either be persistent or event pages.
+
+9
+00:00:42,000 --> 00:00:45,000
+Persistence background pages are always running in open.
+
+10
+00:00:45,000 --> 00:00:51,000
+This can be necessary when you have a background page that stores some persistent state for your extensions
+
+11
+00:00:51,000 --> 00:00:57,000
+or handles some long running process to manage a task. But, background pages can be resource hogs so they
+
+12
+00:00:57,000 --> 00:01:04,000
+should be used carefully. Often a better approach is to use an event page which is only loaded when it's needed.
+
+13
+00:01:04,000 --> 00:01:10,000
+Event pages work just like background pages, except that they don't persist themselves all the time.
+
+14
+00:01:10,000 --> 00:59:00,000
+Instead, an event page is registered for a specific event which will trigger it and cause it to become active.
+

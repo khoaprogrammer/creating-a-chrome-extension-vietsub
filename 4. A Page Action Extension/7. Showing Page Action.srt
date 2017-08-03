@@ -1,0 +1,168 @@
+1
+00:00:01,000 --> 00:00:08,000
+Now to go ahead and display our page action, we're going to start off by just creating an event page,
+
+2
+00:00:08,000 --> 00:00:14,000
+just like we did with the last extension, and this event page is just going to contain the JavaScript
+
+3
+00:00:14,000 --> 00:00:21,000
+to just show the page action. Now it's going to show it on every page by default, because it's just going
+
+4
+00:00:21,000 --> 00:00:27,000
+to run for every page, but when we actually create our content script, we're going to make the content script
+
+5
+00:00:27,000 --> 00:00:31,000
+be responsible for telling the event page to go ahead and show it and then it will only show it for the
+
+6
+00:00:31,000 --> 00:00:35,000
+Pluralsight website, but we're just going to do this to get started.
+
+7
+00:00:35,000 --> 00:00:45,000
+So, we're going to go ahead and create a new document, we're going to call this eventPage.js, and then
+
+8
+00:00:45,000 --> 00:00:48,000
+we're going to go ahead and go into our manifest file
+
+9
+00:00:48,000 --> 00:00:55,000
+and we want to add this event page. We're going to do this just like we did for the previous extension we created,
+
+10
+00:00:55,000 --> 00:01:04,000
+so we're just going to say background, and then inside here we go ahead and put in our scripts.
+
+11
+00:01:04,000 --> 00:01:10,000
+So we're going to add scripts and then we have an array of scripts and we're just going to have the one
+
+12
+00:01:10,000 --> 00:01:19,000
+eventPage.js, and then we want to tell this to be persistent false so that we don't have a background page;
+
+13
+00:01:19,000 --> 00:01:23,000
+instead, we're going to have an eventPage, so persistent false.
+
+14
+00:01:23,000 --> 00:01:27,000
+Okay, so now let's go ahead and modify our eventPage.
+
+15
+00:01:27,000 --> 00:01:34,000
+We're going to go ahead and drag it into the Editor and what we want to do in this eventPage is we want to
+
+16
+00:01:34,000 --> 00:01:45,000
+basically just show our pageAction. So the way that we do that is we just do chrome.pageAction.show and
+
+17
+00:01:45,000 --> 00:01:52,000
+then we're going to specify what the tabId is. Now we don't know what the tabId is so we have to figure out
+
+18
+00:01:52,000 --> 00:01:58,000
+what tab to show this on. So, instead of just doing chrome.pageAction.show, let's go ahead and comment this out,
+
+19
+00:01:58,000 --> 00:02:06,000
+what we're going to do is we're going to do chrome.tabs.query and this is going to let us query the tabs
+
+20
+00:02:06,000 --> 00:02:11,000
+based on some conditions, so we're going to say active equals true.
+
+21
+00:02:11,000 --> 00:02:16,000
+We want basically the active tab and we want it to be in the current window, so we're going to say,
+
+22
+00:02:16,000 --> 00:02:24,000
+currentWindow: true, as well. And then we can pass back a function that's going to be executed with the
+
+23
+00:02:24,000 --> 00:02:31,000
+tabs passed in as a parameter, it'll be a callback here. So here's our function, so then once we have this,
+
+24
+00:02:31,000 --> 00:02:40,000
+now we can go ahead and paste this in here and we're just going to say chrome.pageAction.show and we can get
+
+25
+00:02:40,000 --> 00:02:49,000
+our tabId by doing tabs
+
+26
+00:02:49,000 --> 00:02:53,000
+This should really only be 1, because there's only going to be one active tab for the current window.
+
+27
+00:02:53,000 --> 00:03:00,000
+Okay, then let's go ahead and close this out, put a semicolon here, and now we should be set to go.
+
+28
+00:03:00,000 --> 00:03:06,000
+Okay, now we're going to need to reload this in our browser to actually see this show up, so we're just going to
+
+29
+00:03:06,000 --> 00:03:12,000
+first add some permissions to our manifest.json in order to make sure that we can actually manipulate the tabs,
+
+30
+00:03:12,000 --> 00:03:18,000
+which is what we're basically doing when we're doing that query on the tabs, and we're going to be showing
+
+31
+00:03:18,000 --> 00:03:23,000
+our page_action. So we're just going to do a permissions and we're just going to add one permission here,
+
+32
+00:03:23,000 --> 00:03:27,000
+which is tabs. Now we'll go ahead and save this.
+
+33
+00:03:27,000 --> 00:03:33,000
+Let's open up our browser and I'm going to go ahead and enable my Pluralsight Helper extension.
+
+34
+00:03:33,000 --> 00:03:39,000
+So when I enable this, it should reload, I'll just reload this one time to be sure, and you can see that our
+
+35
+00:03:39,000 --> 00:03:44,000
+page_action is showing up, and it doesn't actually do anything at this point and it's only going to show up on this page.
+
+36
+00:03:44,000 --> 00:03:52,000
+It's basically showing up when that eventPage runs; remember, we only have one eventPage, so it's going to
+
+37
+00:03:52,000 --> 00:03:57,000
+run wherever this first gets loaded. Since it's on this Chrome extensions page it's going to load up here.
+
+38
+00:03:57,000 --> 00:04:02,000
+If we go somewhere else or open a new window, it doesn't show up, but we are going to make this work for
+
+39
+00:04:02,000 --> 00:04:10,000
+multiple pages, or actually, the correct pages, once we add our content script - we'll need that in order to
+
+40
+00:04:10,000 --> 00:04:16,000
+be able to make this more conditional. If you wanted, however, you could make it so that, for example,
+
+41
+00:04:16,000 --> 00:04:22,000
+your eventPage hooked into some event, like whenever a page loaded, and then maybe it checked on that page
+
+42
+00:04:22,000 --> 00:59:00,000
+for some certain text, and based on some text, it triggered showing this page_action.
+

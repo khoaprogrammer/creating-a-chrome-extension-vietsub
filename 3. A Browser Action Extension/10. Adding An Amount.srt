@@ -1,0 +1,232 @@
+1
+00:00:00,000 --> 00:00:04,000
+So what we're going to do next is we're going to make it so that
+
+2
+00:00:04,000 --> 00:00:11,000
+when this is clicked, we're going to go ahead and check to see if there's a total already stored and we're
+
+3
+00:00:11,000 --> 00:00:18,000
+going to use the Chrome Storage API and then if there is, we're going to add the amount that's in that
+
+4
+00:00:18,000 --> 00:00:25,000
+amount box to that total. And if there's not, then we're just going to use the amount from the amount box
+
+5
+00:00:25,000 --> 00:00:31,000
+and we're going to save that value. So, in order to do this though, we're going to need to modify our
+
+6
+00:00:31,000 --> 00:00:38,000
+manifest file, because we need to add permissions to actually utilize the Storage API.
+
+7
+00:00:38,000 --> 00:00:46,000
+You always have to add permissions for whatever you're trying to do, so we're going to add this permissions
+
+8
+00:00:46,000 --> 00:00:53,000
+section and then we're going to actually use an array here, so we specify our permissions in this array,
+
+9
+00:00:53,000 --> 00:00:58,000
+and each type of thing has a specific permission; you can find this in the documentation on the API.
+
+10
+00:00:58,000 --> 00:01:04,000
+So that API doc that we had looked at before for the chrome APIs is going to say what permissions anything needs,
+
+11
+00:01:04,000 --> 00:01:12,000
+and in this case, we need permissions to storage. So once we have that, now we can use the Storage API in
+
+12
+00:01:12,000 --> 00:01:20,000
+our actual JavaScript. So what we're going to do here is we're going to start off by creating a variable
+
+13
+00:01:20,000 --> 00:01:26,000
+that's going to hold the new total, but we're going to want to try and get the value first, and everything
+
+14
+00:01:26,000 --> 00:01:32,000
+that we're going to do with the Chrome API is going to be pretty much using callbacks, because most of the
+
+15
+00:01:32,000 --> 00:01:37,000
+API is asynchronous. So that's important to know is that you're not going to get a result back;
+
+16
+00:01:37,000 --> 00:01:42,000
+if you're used to writing a lot of JavaScript code, that's probably nothing new to you, you're probably
+
+17
+00:01:42,000 --> 00:01:47,000
+familiar with that, but if you're not, then you have to get used to this asynchronous pattern.
+
+18
+00:01:47,000 --> 00:01:58,000
+So we're going to do chrome.storage.sync.get. Now, what we're using here is chrome.storage.sync;
+
+19
+00:01:58,000 --> 00:02:05,000
+there's also a chrome.storage.local. The difference is that the sync is going to get the data,
+
+20
+00:02:05,000 --> 00:02:10,000
+you can think of this from the cloud — it's going to automatically sync with other browser instances that
+
+21
+00:02:10,000 --> 00:02:14,000
+you might have, so when you save and get data it's getting it from there.
+
+22
+00:02:14,000 --> 00:02:18,000
+If you do local, it's just going to store it on the local instance.
+
+23
+00:02:18,000 --> 00:02:25,000
+If there is not a connection, the chrome.storage.sync is going to basically degrade to the local.
+
+24
+00:02:25,000 --> 00:02:32,000
+So, you probably want to use sync if you want to have data possibly be synced up; you only want to use local
+
+25
+00:02:32,000 --> 00:02:37,000
+if you're sure that you only want it to be stored locally. So here what we're going to pass is we can
+
+26
+00:02:37,000 --> 00:02:42,000
+either pass an array of strings or just a string for the key that we want.
+
+27
+00:02:42,000 --> 00:02:50,000
+So, let's just do our total here and then we pass in a function and this function is actually going to
+
+28
+00:02:50,000 --> 00:02:57,000
+return back the items, this is going to be an object, and it's going to have a property equal to each key
+
+29
+00:02:57,000 --> 00:03:05,000
+that gets returned. So what we're going to want to do next is create a variable called newTotal and we're
+
+30
+00:03:05,000 --> 00:03:10,000
+just going to set this equal to 0 for now, and then what we're going to do is we're going to check to see
+
+31
+00:03:10,000 --> 00:03:16,000
+if(items.total), then we know that something came back or there was something stored.
+
+32
+00:03:16,000 --> 00:03:25,000
+If this is false, we know that when we did the sync.get, there wasn't actually a total that was stored,
+
+33
+00:03:25,000 --> 00:03:30,000
+so we're not going to try and get that value, but if there is a value in there then what we want to do is
+
+34
+00:03:30,000 --> 00:03:39,000
+we want to set the newTotal += parseInt and we're going to parse items.total just to make sure that we get
+
+35
+00:03:39,000 --> 00:03:46,000
+this as an integer. So basically all this will do is if there is a total stored, we're going to get it and
+
+36
+00:03:46,000 --> 00:03:51,000
+that's going to be equal to our newTotal. Now, the next thing we want to do is get our amount.
+
+37
+00:03:51,000 --> 00:03:57,000
+So, we're going to do our $(‘#amount') and we're going to be getting the value of this, so this is going to
+
+38
+00:03:57,000 --> 00:04:03,000
+get our amount from our user interface that hopefully a user has entered in and we're going to check to see.
+
+39
+00:04:03,000 --> 00:04:07,000
+If there is an amount, then we're going to do something; if there's not an amount, we're not going to try
+
+40
+00:04:07,000 --> 00:04:14,000
+and add that amount to the total. So, if there amount, then we're going to say newTotal += and we'll do our
+
+41
+00:04:14,000 --> 00:04:20,000
+parseInt again to make sure we get this as an integer and we're going to parseInt our amount.
+
+42
+00:04:20,000 --> 00:04:27,000
+Okay, so now at this point we should have our total and it should take into account what the old total was,
+
+43
+00:04:27,000 --> 00:04:36,000
+if there was one already stored, otherwise it's just going to be adding that amount to 0, basically storing a new total.
+
+44
+00:04:36,000 --> 00:04:42,000
+So now we want to store this, and in this case, when we store it we don't really care about the callback,
+
+45
+00:04:42,000 --> 00:04:49,000
+because we can just send this store and we don't care when exactly it happens, we don't need to do anything
+
+46
+00:04:49,000 --> 00:04:58,000
+when this is done, so we're just going to do chrome.storage.sync.set and here we need to pass in an object
+
+47
+00:04:58,000 --> 00:05:04,000
+and we have to set the properties. So this is sort of like the reverse of what we're getting from the sync.get.
+
+48
+00:05:04,000 --> 00:05:13,000
+So we're just going to basically put here total and then we're going to use newTotal as the value for that property
+
+49
+00:05:13,000 --> 00:05:18,000
+and that's it — that should store this. Now we're going to do a little bit of cleanup here.
+
+50
+00:05:18,000 --> 00:05:26,000
+Let's go ahead and set the total text, because remember that we're going to have a new total here so we want
+
+51
+00:05:26,000 --> 00:05:32,000
+to actually set the text in our user interface equal to the newTotal and then let's go ahead and do
+
+52
+00:05:32,000 --> 00:05:37,000
+something to this amount, let's go ahead and blank this out. So we're going to say (‘#amount').val equals
+
+53
+00:05:37,000 --> 00:05:43,000
+an empty string just to indicate that we've actually stored that newTotal, we've added that amount.
+
+54
+00:05:43,000 --> 00:05:48,000
+Okay, then let's go ahead and end this function call, remember this is all inside of this function.
+
+55
+00:05:48,000 --> 00:05:52,000
+So we have to use the correct syntax here and so now this looks correct.
+
+56
+00:05:52,000 --> 00:05:58,000
+We're basically making it so that when addAmount is clicked, we're going to try and get the total,
+
+57
+00:05:58,000 --> 00:06:04,000
+we're going to try and add that total to our newTotal, which starts out at 0, we'll add the amount if there is
+
+58
+00:06:04,000 --> 00:59:00,000
+an amount, and then we're just going to store this newTotal, update the UI, and then blank out that amount.
+

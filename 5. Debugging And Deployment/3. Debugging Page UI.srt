@@ -1,0 +1,92 @@
+1
+00:00:01,000 --> 00:00:05,000
+Alright, so let's go ahead and see how we can actually debug some of our extensions.
+
+2
+00:00:05,000 --> 00:00:10,000
+So, if you already are familiar with the Chrome Developer Tools, you may have used them on a web page,
+
+3
+00:00:10,000 --> 00:00:15,000
+so for example, I could right-click on something here and say ‘Inspect element' and this would bring them up
+
+4
+00:00:15,000 --> 00:00:22,000
+and I can also just bring up the Chrome Developer Tools from either the menu if I go under Tools and then
+
+5
+00:00:22,000 --> 00:00:29,000
+go to Developer tools or the JavaScript console, but you may have used these tools to debug web pages,
+
+6
+00:00:29,000 --> 00:00:36,000
+to change the html or the CSS or just to go through the JavaScript and figure out what's going on and
+
+7
+00:00:36,000 --> 00:00:44,000
+you may have found that you're not actually seeing the extension JavaScript or the extension HTML inside here.
+
+8
+00:00:44,000 --> 00:00:48,000
+So, you can actually use the Chrome Developer Tools, but you just need a different instance.
+
+9
+00:00:48,000 --> 00:00:52,000
+So, for example, let's take a look at our Protein Tracker extension.
+
+10
+00:00:52,000 --> 00:00:56,000
+If I were to right-click in here, I can do an ‘Inspect element' and this will work.
+
+11
+00:00:56,000 --> 00:01:03,000
+I can also just right-click on the extension itself in the toolbar and say ‘Inspect popup' and that will go
+
+12
+00:01:03,000 --> 00:01:07,000
+ahead and bring up the popup, as well as another Chrome Developer Tool console.
+
+13
+00:01:07,000 --> 00:01:14,000
+So this one is actually operating against this particular page; so if we were to go to Elements here,
+
+14
+00:01:14,000 --> 00:01:20,000
+you can see that it is working for our popup, our user interface here, and then from here we could look at
+
+15
+00:01:20,000 --> 00:01:30,000
+our sources and we can find all of the actual source here; this popup.js, for example, and we can do
+
+16
+00:01:30,000 --> 00:01:37,000
+anything we want with this JavaScript. So, just being able to see what's loaded up is step one,
+
+17
+00:01:37,000 --> 00:01:41,000
+that's one really useful thing to be able to do to debug an extension.
+
+18
+00:01:41,000 --> 00:01:45,000
+In many cases you can figure out what's going wrong with your extension by looking here and seeing if
+
+19
+00:01:45,000 --> 00:01:52,000
+there's something missing, is this JavaScript correct, can you see what's happening with this HTML?
+
+20
+00:01:52,000 --> 00:01:59,000
+For example, you could go in here and you could change the HTML or the CSS styling if you wanted to.
+
+21
+00:01:59,000 --> 00:02:06,000
+So let's go ahead and change the style for this; for example, let's say that the element.style for this
+
+22
+00:02:06,000 --> 00:02:14,000
+should be font-size and we'll make this small, so you can see that this actually changes to small.
+
+23
+00:02:14,000 --> 00:59:00,000
+So that's how we get at our actual extension when we have this visible page UI.
+

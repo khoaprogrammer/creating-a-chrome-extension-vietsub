@@ -1,0 +1,44 @@
+1
+00:00:01,000 --> 00:00:07,000
+We talked briefly about page actions in the first module, but I wanted to go over them one more time here
+
+2
+00:00:07,000 --> 00:00:12,000
+now that we have seen browser actions and can better understand the difference between the two.
+
+3
+00:00:12,000 --> 00:00:20,000
+As you can see here, a page action, unlike a browser action, shows up in the address bar and it isn't always there.
+
+4
+00:00:20,000 --> 00:00:27,000
+In fact, by default, the page action doesn't show up at all; you have to explicitly call into the Chrome API
+
+5
+00:00:27,000 --> 00:00:33,000
+to tell Chrome to show a page action. This is the key difference between the two.
+
+6
+00:00:33,000 --> 00:00:39,000
+Other than that, the only major difference is that a page action can't have a badge like we had added to
+
+7
+00:00:39,000 --> 00:00:44,000
+the Protein Tracker to show the total protein count. We can create a UI for the page action, just like
+
+8
+00:00:44,000 --> 00:00:49,000
+we could for a browser action, as you can see here. When creating a chrome extension, it's important to
+
+9
+00:00:49,000 --> 00:00:55,000
+realize when it makes sense to use a page action instead of a browser action.
+
+10
+00:00:55,000 --> 00:01:01,000
+It is best to make an extension that only works in a subset of pages or websites, a page action in most cases,
+
+11
+00:01:01,000 --> 00:59:00,000
+because it doesn't end up taking a valuable screen real-estate in the toolbar when it isn't needed.
+

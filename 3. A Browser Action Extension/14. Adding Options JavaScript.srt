@@ -1,0 +1,88 @@
+1
+00:00:01,000 --> 00:00:09,000
+Okay, so let's go ahead and clear out some of this that we have in our options.js so we can implement the logic
+
+2
+00:00:09,000 --> 00:00:15,000
+we want here. Now, the first thing that we're going to want to do is we're going to want to populate that
+
+3
+00:00:15,000 --> 00:00:24,000
+goal input if we have a goal, so we're actually going to change this; instead of doing chrome.storage.sync.get total,
+
+4
+00:00:24,000 --> 00:00:32,000
+let's go ahead and say get the goal. And then here we have a goal input and we're going to change the text,
+
+5
+00:00:32,000 --> 00:00:41,000
+and in this case since it's an input, it'll be the val, so we'll change the value equal to items.goal.
+
+6
+00:00:41,000 --> 00:00:46,000
+Now if there isn't already a goal saved, then that's fine - it's not actually going to do anything.
+
+7
+00:00:46,000 --> 00:00:48,000
+So then the next thing we're going to do is we're going to hook up the Save button.
+
+8
+00:00:48,000 --> 00:00:59,000
+So we want to go ahead and say when you click the save button and execute this JavaScript function, and inside here,
+
+9
+00:00:59,000 --> 00:01:04,000
+what we want to do is we want to go ahead and save that goal using the chrome storage.
+
+10
+00:01:04,000 --> 00:01:10,000
+So let's create a variable goal and we're going to set this equal to whatever the goal text is, so we use
+
+11
+00:01:10,000 --> 00:01:17,000
+this val to get that, and then if(goal), so if there's actually something entered there, then we can go ahead
+
+12
+00:01:17,000 --> 00:01:26,000
+and do chrome.storage.sync.set, and then remember here we pass in an object, so we just specify whatever
+
+13
+00:01:26,000 --> 00:01:32,000
+properties we want for this, we want it to have a property called goal, that'll be our key, and then it'll
+
+14
+00:01:32,000 --> 00:01:38,000
+be equal to whatever the goal is, and then we're actually going to create a callback here.
+
+15
+00:01:38,000 --> 00:01:48,000
+So when this finishes, when it's done saving, then we're going to go ahead and close the browser window,
+
+16
+00:01:48,000 --> 00:01:55,000
+or rather, we're going to close the tab; so we're going to do close here, so that should close that tab.
+
+17
+00:01:55,000 --> 00:01:59,000
+Then, there's one more thing we want to implement, we want to implement this reset functionality.
+
+18
+00:01:59,000 --> 00:02:07,000
+So let's go ahead and do that as well, so we're going to say (‘#reset').click and then here we're going to pass in
+
+19
+00:02:07,000 --> 00:02:16,000
+a function, and inside reset what we're going to want to do is for now all we're going to do is we're just
+
+20
+00:02:16,000 --> 00:02:24,000
+going to reset the total, so we're basically going to do chrome.storage.sync.set, and then we're going to
+
+21
+00:02:24,000 --> 00:02:33,000
+set the total property equal to 0. Now later on we'll actually make this show notification, but for now
+
+22
+00:02:33,000 --> 00:59:00,000
+we're just going to set the total to 0. So let's go ahead and test this out next.
+

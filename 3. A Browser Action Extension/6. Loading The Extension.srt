@@ -1,0 +1,52 @@
+1
+00:00:01,000 --> 00:00:06,000
+So at this point we're almost ready to go ahead and test out our extension to get it loaded into our browser,
+
+2
+00:00:06,000 --> 00:00:13,000
+but before we do that we do need an icon, so I've already created an icon here, a very nice looking icon
+
+3
+00:00:13,000 --> 00:00:22,000
+that says PT for protein tracker and this icon, remember, this is 19x19 pixels — this is the icon that's
+
+4
+00:00:22,000 --> 00:00:27,000
+going to be displayed in that toolbar. So now we should be all set up to actually add this extension.
+
+5
+00:00:27,000 --> 00:00:35,000
+So I'm just going to go ahead and get a browser window here and then I'm just going to go to Settings and
+
+6
+00:00:35,000 --> 00:00:42,000
+Extensions, that's another way to get to Extensions if you forget the URL up here, and then we're going to
+
+7
+00:00:42,000 --> 00:00:48,000
+go ahead and do a ‘Load unpacked extension' and we're just going to find where this extension is.
+
+8
+00:00:48,000 --> 00:00:54,000
+So it's under here, Creating Chrome Extension, and then I've got this ProteinTracker.
+
+9
+00:00:54,000 --> 00:00:59,000
+So now you can see that it immediately loaded up, we've got our nice little icon here, and then when we
+
+10
+00:00:59,000 --> 00:01:05,000
+click it, we see our user interface; it just says Protein Tracker, Total: 0, Goal: 0, Enter amount —
+
+11
+00:01:05,000 --> 00:01:12,000
+of course this doesn't work quite yet, but you should get to this step if you have everything set up correctly.
+
+12
+00:01:12,000 --> 00:01:17,000
+You have to have your icon, you have to have the HTML. If you reference anything that doesn't exist,
+
+13
+00:01:17,000 --> 00:59:00,000
+you'll have a problem loading this, so that's why we haven't referenced anything else in our manifest or in our HTML yet.
+

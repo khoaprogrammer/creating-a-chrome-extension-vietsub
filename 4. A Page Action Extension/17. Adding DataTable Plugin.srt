@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:04,000
+Now the last thing we're going to implement for our plug-in is to make it so
+
+2
+00:00:04,000 --> 00:00:10,000
+that this table here is sortable when we click this ‘Make sortable' button.
+
+3
+00:00:10,000 --> 00:00:16,000
+Now rather than reinventing the wheel, we're actually going to use a jQuery plug-in called DataTables.
+
+4
+00:00:16,000 --> 00:00:27,000
+So we can go to jQuery datatable and here you can see there's this DataTables plug-in for jQuery.
+
+5
+00:00:27,000 --> 00:00:34,000
+I'm just going to use this as an example of how you could use a plug-in or use something else in your content scripts.
+
+6
+00:00:34,000 --> 00:00:37,000
+So what we're going to do is we're just going to download this,
+
+7
+00:00:37,000 --> 00:00:43,000
+and then we're going to go ahead and get the JavaScript file out of here.
+
+8
+00:00:43,000 --> 00:00:54,000
+So inside here, you'll find underneath the media there's a js and then here there's this jquery.dataTable.js.
+
+9
+00:00:54,000 --> 00:01:03,000
+So we're just going to go ahead and add that to our extension, we'll just drop it in here, and then what
+
+10
+00:01:03,000 --> 00:01:12,000
+we're going to do is modify our manifest file to include this. So we can just go to our Editor and then
+
+11
+00:01:12,000 --> 00:01:23,000
+in our manifest here we can add for our js for our content_scripts, this data table, so we're just going
+
+12
+00:01:23,000 --> 00:01:30,000
+to add this one and let's go ahead and copy this so we get the right name.
+
+13
+00:01:30,000 --> 00:01:37,000
+Okay, so now what's going to happen is that any of the pages that load our content_scripts are also going
+
+14
+00:01:37,000 --> 00:01:43,000
+to load this jQuery.dataTables.js, which is going to give us the ability to very easily convert a regular
+
+15
+00:01:43,000 --> 00:59:00,000
+table into a sortable table.
+

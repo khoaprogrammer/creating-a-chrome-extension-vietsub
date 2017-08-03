@@ -1,0 +1,104 @@
+1
+00:00:00,000 --> 00:00:03,000
+So next we're going to go ahead and create our
+
+2
+00:00:03,000 --> 00:00:09,000
+user interface, our basic popup.html, so we're just going to create a ‘New Text Document' and we're just
+
+3
+00:00:09,000 --> 00:00:18,000
+going to call this popup.html and we're going to go ahead and open this one up in Visual Studio to edit it
+
+4
+00:00:18,000 --> 00:00:25,000
+and what we want to do here is design the user interface for our main popup, so this will be when you click
+
+5
+00:00:25,000 --> 00:00:32,000
+the icon for our extension, it should show this UI. We're just going to make a real simple user interface.
+
+6
+00:00:32,000 --> 00:00:39,000
+You could, of course, make something more complicated if you want to, but we're just going to create an HTML document
+
+7
+00:00:39,000 --> 00:00:53,000
+with our doctype html and then inside here, of course, we have our html and then our head and then our body.
+
+8
+00:00:53,000 --> 00:01:04,000
+And what we're going to put inside here is we're just going to put in h1, that will say Protein Tracker,
+
+9
+00:01:04,000 --> 00:01:06,000
+and then we'll add some h2's for everything else we're going to have in here.
+
+10
+00:01:06,000 --> 00:01:14,000
+So let's have a total and then let's make a span here so that we can actually set this total to some value,
+
+11
+00:01:14,000 --> 00:01:20,000
+so we're going to give this an id of total and we're going to set it to 0 by default.
+
+12
+00:01:20,000 --> 00:01:32,000
+We'll do the same thing here for the goal, so we'll put Goal, and then we're going to add an h3 for ‘Enter amount.'
+
+13
+00:01:32,000 --> 00:01:41,000
+So we'll say Enter amount and then we want to have an input that we'll call amount and this will be of type text.
+
+14
+00:01:41,000 --> 00:01:49,000
+So that will let us have our little text input there and then we want a button for someone to go ahead and
+
+15
+00:01:49,000 --> 00:01:55,000
+submit this to enter the values, so we're just going to make this addAmount and we're going to make the type
+
+16
+00:01:55,000 --> 00:02:03,000
+equal to submit and then the value, this'll be what it says, it'll say Add Protein.
+
+17
+00:02:03,000 --> 00:02:10,000
+Okay, and then we want to go ahead and add a title, this'll actually end up being a tool tip for our extension
+
+18
+00:02:10,000 --> 00:02:16,000
+when you hover over it, so we'll call this Protein Tracker, and we're going to add some script files,
+
+19
+00:02:16,000 --> 00:02:21,000
+but we're not going to add those yet, we're just going to leave this as is, and remember that little trick
+
+20
+00:02:21,000 --> 00:02:27,000
+that I showed you in the last module - we can use that here to look at our user interface.
+
+21
+00:02:27,000 --> 00:02:35,000
+In fact, I found that if you have two monitors, you can actually leave this open on one and then make your
+
+22
+00:02:35,000 --> 00:02:43,000
+edits in your HTML and you'll see them change here automatically, so this is kind of a quick way to do a
+
+23
+00:02:43,000 --> 00:02:49,000
+preview of your HTML and the nice thing about this is it works regardless of what editor you're using.
+
+24
+00:02:49,000 --> 00:02:53,000
+So we have a real simple user interface; the basic idea here is that we're going to have the Total here
+
+25
+00:02:53,000 --> 00:02:59,000
+that we can swap out, the Goal that we can swap out, the user should be able to enter some amount, and
+
+26
+00:02:59,000 --> 00:59:00,000
+then be able to click this Add Protein, and it will make it so that it adds that amount to the total.
+

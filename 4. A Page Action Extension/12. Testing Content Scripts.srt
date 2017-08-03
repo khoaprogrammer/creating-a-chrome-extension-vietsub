@@ -1,0 +1,64 @@
+1
+00:00:01,000 --> 00:00:07,000
+Okay, so it's time to test this out. Let's go ahead and reload our Pluralsight Helper.
+
+2
+00:00:07,000 --> 00:00:10,000
+You can see we don't have a pageAction here, so that's good.
+
+3
+00:00:10,000 --> 00:00:13,000
+I'm going to go to Pluralsight.com; I still don't see a pageAction — that's good.
+
+4
+00:00:13,000 --> 00:00:21,000
+If I go to the Top 100 Leaderboard, there we go, we've got our pageAction, so it's just showing up when
+
+5
+00:00:21,000 --> 00:00:29,000
+we're on those pages that match what that content script said. So, now if I go, for example, to let's say
+
+6
+00:00:29,000 --> 00:00:34,000
+the blog, we don't see anything show up here, but if I were to go to
+
+7
+00:00:34,000 --> 00:00:41,000
+an author page, let's go to Shawn Wildermuth, and now you can see that this shows up again.
+
+8
+00:00:41,000 --> 00:00:47,000
+So a little tricky to get this working. We have a little bit of an indirection here, because we don't have
+
+9
+00:00:47,000 --> 00:00:53,000
+the ability to really just have the matches for the pageAction itself and we need a way to display the
+
+10
+00:00:53,000 --> 00:00:59,000
+pageAction, so we have to basically have a content script, that content script has to send a message to our
+
+11
+00:00:59,000 --> 00:01:07,000
+eventPage, which is listening, which can then actually execute script that will show our pageAction inside
+
+12
+00:01:07,000 --> 00:01:12,000
+of the correct tab, but once you have that framework in place, now it's pretty easy.
+
+13
+00:01:12,000 --> 00:01:20,000
+Now we have access to be able to send messages from our content page to the rest of our extension and
+
+14
+00:01:20,000 --> 00:01:25,000
+next we're going to make that go the opposite direction when we actually implement functionality.
+
+15
+00:01:25,000 --> 00:01:29,000
+So we're going to make it so when we click these buttons that it's actually going to send a message
+
+16
+00:01:29,000 --> 00:59:00,000
+the other way to the actual content script.
+

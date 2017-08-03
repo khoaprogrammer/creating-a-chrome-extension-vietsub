@@ -1,0 +1,80 @@
+1
+00:00:01,000 --> 00:00:07,000
+Okay, so now you know what a Chrome extension is and a bit about how Chrome extensions work.
+
+2
+00:00:07,000 --> 00:00:13,000
+But, what exactly can you do with a Chrome extension? Chrome extensions are actually very powerful and can
+
+3
+00:00:13,000 --> 00:00:19,000
+do more than you might think. Let's go over some of the obvious and the not so obvious things you can do
+
+4
+00:00:19,000 --> 00:00:27,000
+with a Chrome extension. First of all, you can interact with web pages in the browser or external web pages
+
+5
+00:00:27,000 --> 00:00:33,000
+and/or other servers. This means that you can have an extension interact with APIs or other services to
+
+6
+00:00:33,000 --> 00:00:40,000
+perform its functionality. You aren't restricted to just what you can package in your extension file.
+
+7
+00:00:40,000 --> 00:00:44,000
+You can also control many of the browser features available in Chrome.
+
+8
+00:00:44,000 --> 00:00:49,000
+We'll take a look at the Chrome APIs in a minute, but there're pretty extensive and really lets you do a lot
+
+9
+00:00:49,000 --> 00:00:56,000
+more than you might have thought possible. For example, through the Chrome APIs you can access things the
+
+10
+00:00:56,000 --> 00:01:02,000
+Font settings, Tabs, Downloads, and even History. You can also add your own UI to Chrome through the use of
+
+11
+00:01:02,000 --> 00:01:10,000
+either a Chrome Browser action or Page action. Browser actions show a button on the Chrome toolbar that can
+
+12
+00:01:10,000 --> 00:01:16,000
+be pressed to display a custom UI. And page actions can put icons in the address bar that can be clicked to
+
+13
+00:01:16,000 --> 00:01:22,000
+access a user interface for actions specific to that page. In addition, your extension can have its own
+
+14
+00:01:22,000 --> 00:01:27,000
+options page where it can be configured through your own custom UI.
+
+15
+00:01:27,000 --> 00:01:32,000
+Extensions can modify loaded pages by injecting JavaScript into the page to add capabilities to the page or
+
+16
+00:01:32,000 --> 00:01:39,000
+even change the UI of it. You can also use extensions to add context menu items to the right-click
+
+17
+00:01:39,000 --> 00:01:44,000
+context menu in Chrome. Finally, Chrome extensions can actually load DLLs.
+
+18
+00:01:44,000 --> 00:01:49,000
+Although this is something you typically want to avoid since it's pretty dangerous and causes an extension to
+
+19
+00:01:49,000 --> 00:01:57,000
+leave the safe sandbox environment of Chrome. Doing this actually creates a real plugin using the NPAPI,
+
+20
+00:01:57,000 --> 00:59:00,000
+but we won't be covering that in this course.
+

@@ -1,0 +1,44 @@
+1
+00:00:01,000 --> 00:00:08,000
+Okay, so now let's go ahead and open up a browser window and then we're going to need to reload this.
+
+2
+00:00:08,000 --> 00:00:09,000
+So let's go ahead and go to our Extensions.
+
+3
+00:00:09,000 --> 00:00:16,000
+And since we changed the permissions, we're just going to do a reload here, and then now we should be able
+
+4
+00:00:16,000 --> 00:00:22,000
+to go ahead and use our context menu. Now if I right-click here, you're not going to see anything —
+
+5
+00:00:22,000 --> 00:00:28,000
+you're not going to see it unless I am highlighting some text and then it will have a number to use.
+
+6
+00:00:28,000 --> 00:00:33,000
+So let's do something like search for calorie counter.
+
+7
+00:00:33,000 --> 00:00:41,000
+And maybe we can find some food nutrition data, this would be a good usage for this, so let's say burger,
+
+8
+00:00:41,000 --> 00:00:48,000
+and we can go in here and we should be able to find something like protein, there we go, 22.3 grams.
+
+9
+00:00:48,000 --> 00:00:58,000
+Let's just highlight our 22 and then I can right-click here and click Add Protein and you can see the 22 appeared.
+
+10
+00:00:58,000 --> 00:01:06,000
+We've added 22 to our total. So this will work, I could grab, for example, this number 145, right-click,
+
+11
+00:01:06,000 --> 00:59:00,000
+and do Add Protein, and you can see that that total's updated here now as well.
+

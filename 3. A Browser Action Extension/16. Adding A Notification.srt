@@ -1,0 +1,152 @@
+1
+00:00:01,000 --> 00:00:08,000
+So next up we want to add some notifications. Right now when we click Reset in our options, it's not very
+
+2
+00:00:08,000 --> 00:00:13,000
+clear to the user that their total was reset, and since this is a destructive action we should probably
+
+3
+00:00:13,000 --> 00:00:18,000
+notify them in some way. So what we're going to do is we're going to use notifications to do that.
+
+4
+00:00:18,000 --> 00:00:25,000
+So in order to be able to use notifications, we have to add a permission, so we're going to go to our permissions,
+
+5
+00:00:25,000 --> 00:00:31,000
+and in addition to storage, we're going to add notifications. So this will give us access to the
+
+6
+00:00:31,000 --> 00:00:37,000
+Notification API inside of chrome and then what we're going to do, it's going to be pretty simple,
+
+7
+00:00:37,000 --> 00:00:45,000
+all we're going to do is in our options.js when we do this reset, instead of just doing this and forgetting about it,
+
+8
+00:00:45,000 --> 00:00:53,000
+we're going to go ahead and do a callback, so we're going to pass in this function, and inside here what we
+
+9
+00:00:53,000 --> 00:00:59,000
+want to do is we want to call chrome.notifications.create to create a notification.
+
+10
+00:00:59,000 --> 00:01:07,000
+So we're just going to do this var opt to make an object that's going to contain the options for our notification.
+
+11
+00:01:07,000 --> 00:01:13,000
+We could do this inline as well, but there's a lot here so it's nice to create the object outside in
+
+12
+00:01:13,000 --> 00:01:18,000
+a separate variable. So we're going to save that, first of all the type, and this is going to be basic.
+
+13
+00:01:18,000 --> 00:01:23,000
+So there's a few different types of notifications, we're not going to get into the different types here,
+
+14
+00:01:23,000 --> 00:01:30,000
+but you could check that out in the chrome APIs, and then we're going to set the title for the notification,
+
+15
+00:01:30,000 --> 00:01:37,000
+which is going to be "Total reset!" and then we're going to set the message.
+
+16
+00:01:37,000 --> 00:01:46,000
+So this is the message that will be displayed and we're going to say "Total has been reset back to 0."
+
+17
+00:01:46,000 --> 00:01:55,000
+And then we can specify what the icon URL is, and in our case, we're just going to use the one icon that we have.
+
+18
+00:01:55,000 --> 00:01:59,000
+It's going to look a little bit weird because it's going to blow it up, but you can create another icon if
+
+19
+00:01:59,000 --> 00:02:04,000
+you want to, you can customize any of these things; in fact, you might want to have different icons for
+
+20
+00:02:04,000 --> 00:02:08,000
+different types of notifications that you would use in your app.
+
+21
+00:02:08,000 --> 00:02:18,000
+So then we're going to call chrome.notifications.create and here what we want to do is specify an id for
+
+22
+00:02:18,000 --> 00:02:22,000
+that particular notification so we can uniquely identify it and then the options.
+
+23
+00:02:22,000 --> 00:02:30,000
+So, we're just going to call this one reset for the id and then we're going to pass in our options and then
+
+24
+00:02:30,000 --> 00:02:36,000
+we can pass in a callback, and I believe this one requires you to have a callback parameter, so we're just
+
+25
+00:02:36,000 --> 00:02:41,000
+going to pass in an empty function, we don't actually care to have a callback in our case.
+
+26
+00:02:41,000 --> 00:02:50,000
+So, now we should see a little notification show up at the bottom of the screen when we click the reset.
+
+27
+00:02:50,000 --> 00:02:55,000
+Now this is only going to work, I believe, on Windows and on Chrome OS right now.
+
+28
+00:02:55,000 --> 00:03:00,000
+I don't think notifications are implemented on the other operating systems and that may change by the time
+
+29
+00:03:00,000 --> 00:03:05,000
+that you're listening to this course, so don't be surprised if notifications don't work if you're not using
+
+30
+00:03:05,000 --> 00:03:12,000
+Windows or Chrome OS. Okay, so let's go ahead and go back to our browser and then remember we've changed
+
+31
+00:03:12,000 --> 00:03:18,000
+the permissions here, so we're going to need to reload this. So let's go ahead and go into our extensions,
+
+32
+00:03:18,000 --> 00:03:25,000
+and then we're going to go ahead and reload this extension, and then now, if we right-click here and go to Options
+
+33
+00:03:25,000 --> 00:03:31,000
+and we click Reset Total, there you go, you can see this Total reset, Total has been Reset back to 0.
+
+34
+00:03:31,000 --> 00:03:37,000
+And you can see it's blown up this icon, so if you actually had an icon of a larger size, this would show up
+
+35
+00:03:37,000 --> 00:03:43,000
+a little bit better in here, but this is the basic way to create notifications, which this is a pretty useful
+
+36
+00:03:43,000 --> 00:03:47,000
+feature of Chrome to be able to access these notifications. You can actually make it so that when a user
+
+37
+00:03:47,000 --> 00:03:53,000
+clicks on that notification, it does something, maybe it takes you to an option page or something like that,
+
+38
+00:03:53,000 --> 00:59:00,000
+and you can also update those notifications if you want through that API.
+

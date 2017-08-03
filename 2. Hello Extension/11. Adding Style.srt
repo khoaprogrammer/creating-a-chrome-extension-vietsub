@@ -1,0 +1,92 @@
+1
+00:00:01,000 --> 00:00:06,000
+Now, just as you might except, we can also add CSS. We could put that in line into our HTML or we can
+
+2
+00:00:06,000 --> 00:00:08,000
+just go ahead and create a new style sheet.
+
+3
+00:00:08,000 --> 00:00:13,000
+I'm just going to create a style sheet; we're just going to call this popup.css.
+
+4
+00:00:13,000 --> 00:00:17,000
+And we're just going to put a simple style in here just to show how this works.
+
+5
+00:00:17,000 --> 00:00:20,000
+So, I'll just go ahead and edit this.
+
+6
+00:00:20,000 --> 00:00:27,000
+And we're just going to put in this popup.css one small style here on the h1, we're just going to make
+
+7
+00:00:27,000 --> 00:00:33,000
+it so that the color for our text is basically going to just be blue.
+
+8
+00:00:33,000 --> 00:00:38,000
+So, we'll just put that in and then we're just going to go into our popup.html and we'll just add a reference
+
+9
+00:00:38,000 --> 00:00:43,000
+to our style sheet. We'll do this just like you would for any other HTML page.
+
+10
+00:00:43,000 --> 00:00:58,000
+We're just going to do a link rel=stylesheet and then type=text/css. And then the actual href for this.
+
+11
+00:00:58,000 --> 00:01:01,000
+And we're just going to put popup.css.
+
+12
+00:01:01,000 --> 00:01:09,000
+Now, one thing to note here, is that we are doing this relative because everything is in the same directory.
+
+13
+00:01:09,000 --> 00:01:15,000
+So, whenever we're referencing something, we're just basically referencing it without any kind of path here.
+
+14
+00:01:15,000 --> 00:01:19,000
+It's just a relative reference. So, this should reference our CSS.
+
+15
+00:01:19,000 --> 00:01:24,000
+So now, if we go ahead and save this, we can go ahead and open up a Chrome browser.
+
+16
+00:01:24,000 --> 00:01:31,000
+And inside here if we click on our pop-up, now you can see its being styled, it's coming up in blue.
+
+17
+00:01:31,000 --> 00:01:35,000
+And we're going to get into this more when we look at the Chrome developer tools.
+
+18
+00:01:35,000 --> 00:01:40,000
+But, I do want to show you, real quick, that if you wanted to use the Chrome DevTools on this,
+
+19
+00:01:40,000 --> 00:01:43,000
+the easiest thing to do is just to go to Inspect element.
+
+20
+00:01:43,000 --> 00:01:49,000
+And then you can see it'll pop-up a little version of the DevTools that's basically targeting this.
+
+21
+00:01:49,000 --> 00:01:54,000
+It's not the actual page itself. You just bring up the Chrome DevTools on the page; you're not going to
+
+22
+00:01:54,000 --> 00:01:58,000
+see the right thing. But you can use this to do some debugging and like I said in the last module,
+
+23
+00:01:58,000 --> 00:59:00,000
+we'll get into this much more.
+

@@ -1,0 +1,96 @@
+1
+00:00:00,000 --> 00:00:07,000
+So I wanted to show you one more thing real quick that I find really useful for debugging an extension and
+
+2
+00:00:07,000 --> 00:00:13,000
+this will apply to some of the other pages that we'll look at in our extension debugging in a little bit here,
+
+3
+00:00:13,000 --> 00:00:18,000
+but it's one of the things that a lot of developers forget that they can do when debugging an extension.
+
+4
+00:00:18,000 --> 00:00:23,000
+And I find this really useful. So let's go ahead and go through here and we'll just let this continue and
+
+5
+00:00:23,000 --> 00:00:24,000
+get rid of this breakpoint.
+
+6
+00:00:24,000 --> 00:00:30,000
+But now I'm going to click on this console and we can actually bring it up in here as well just by clicking
+
+7
+00:00:30,000 --> 00:00:32,000
+this so that we can have a split view.
+
+8
+00:00:32,000 --> 00:00:39,000
+But what we can do with this console is we can basically enter any JavaScript in here, so we could do things
+
+9
+00:00:39,000 --> 00:00:45,000
+like perform selectors, jQuery selectors, we can actually manipulate the DOM, we can basically run JavaScript,
+
+10
+00:00:45,000 --> 00:00:52,000
+we have a console in here, and one really useful thing that you can do is you can use the chrome object.
+
+11
+00:00:52,000 --> 00:00:59,000
+Remember that the chrome API is basically chrome.whatever and so you can actually practice or try utilizing
+
+12
+00:00:59,000 --> 00:01:06,000
+or experiment with chrome API calls from here. So, for example, remember we have like this browserAction,
+
+13
+00:01:06,000 --> 00:01:12,000
+so we could actually do browserAction, and we could actually do something like get the popup or get the title
+
+14
+00:01:12,000 --> 00:01:18,000
+or even set the popup or title, setBadgeText, so we could try doing that; we can basically do anything we
+
+15
+00:01:18,000 --> 00:01:26,000
+could do with that API, which is really neat because you can sort of experiment with some of the API calls
+
+16
+00:01:26,000 --> 00:01:31,000
+in order to build out your extensions. So maybe you have part of the functionality of your extension and
+
+17
+00:01:31,000 --> 00:01:37,000
+you want to try to do something in it and you don't want to have to make changes to your actual extension
+
+18
+00:01:37,000 --> 00:01:44,000
+and then reload it to test it out, you can test out that logic sort of right inside here and see what's going on.
+
+19
+00:01:44,000 --> 00:01:49,000
+Another useful thing that I tend to do is to go into my source code and then let's say that I'm having
+
+20
+00:01:49,000 --> 00:01:54,000
+a problem that isn't working; for example, trying to do this sync.get.
+
+21
+00:01:54,000 --> 00:02:00,000
+Well I could just copy this code that's not working, I can put it into the console, so let's go ahead and do
+
+22
+00:02:00,000 --> 00:02:06,000
+that real quick, and then, for example, in this callback here, I could change this, do like a console debug
+
+23
+00:02:06,000 --> 00:02:10,000
+in here to write it out or figure out what's going on a lot easier.
+
+24
+00:02:10,000 --> 00:59:00,000
+So, I utilize this quite often to be able to troubleshoot pieces of my code.
+

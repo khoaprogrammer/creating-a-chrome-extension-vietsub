@@ -1,0 +1,76 @@
+1
+00:00:01,000 --> 00:00:06,000
+Okay, so now to do the next step, which is we're going to basically add a badge that's going to show what
+
+2
+00:00:06,000 --> 00:00:11,000
+the current protein count is; we're actually going to make use of an Event Page.
+
+3
+00:00:11,000 --> 00:00:18,000
+So the way that we do this is we have to go to our manifest, and inside here, we can specify the background,
+
+4
+00:00:18,000 --> 00:00:25,000
+and this is called background because there used to only be background pages and now background pages and
+
+5
+00:00:25,000 --> 00:00:31,000
+event pages are specified here. So, what we're going to do is we're going to create a background property,
+
+6
+00:00:31,000 --> 00:00:34,000
+and inside here, we're going to create an object that has our options.
+
+7
+00:00:34,000 --> 00:00:40,000
+So we put our scripts in here and this is going to be an array of the scripts that are going to be loaded;
+
+8
+00:00:40,000 --> 00:00:51,000
+we're just going to make our script called eventPage.js. And then we need to specify whether this is persistent,
+
+9
+00:00:51,000 --> 00:01:00,000
+so we're going to say persistent equals false. Now if you made persistent true, it would actually be a background page;
+
+10
+00:01:00,000 --> 00:01:05,000
+by making persistent false, it's an event page. So it's not going to live forever, it's only going to be
+
+11
+00:01:05,000 --> 00:01:11,000
+invoked when it's needed. Basically what we're going to do with our event page is we're going to register
+
+12
+00:01:11,000 --> 00:01:16,000
+some event handlers, we're going to listen for certain things, and that's what we're going to do in that
+
+13
+00:01:16,000 --> 00:01:20,000
+script, and then it will get invoked whenever those events fire.
+
+14
+00:01:20,000 --> 00:01:26,000
+If you just use the background page, you would have it running all the time so you wouldn't necessarily
+
+15
+00:01:26,000 --> 00:01:33,000
+have to listen for a specific event; you could have that page going pretty much all the time in the background.
+
+16
+00:01:33,000 --> 00:01:38,000
+And there are some cases where you'd want to do that, but in most cases you want to try and use the event page
+
+17
+00:01:38,000 --> 00:01:43,000
+instead because it's going to take up less resources. So, now the next thing we need to do is to go ahead
+
+18
+00:01:43,000 --> 00:01:56,000
+and create this eventPage.js. So let's go ahead and do a ‘New Text Document' and we'll just call this eventPage.js.
+
+19
+00:01:56,000 --> 00:59:00,000
+And now let's go ahead and implement that functionality.
+

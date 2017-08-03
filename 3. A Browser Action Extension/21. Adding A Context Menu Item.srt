@@ -1,0 +1,180 @@
+1
+00:00:02,000 --> 00:00:07,000
+Okay, so the last thing that we're going to do is we're going to make a context menu item to be able to
+
+2
+00:00:07,000 --> 00:00:15,000
+add protein by highlighting some text and then basically selecting the Add Protein Option and we're going to
+
+3
+00:00:15,000 --> 00:00:20,000
+utilize the event page to do this as well. So there's a couple things that we're going to need to do.
+
+4
+00:00:20,000 --> 00:00:28,000
+First of all, we need to be able to use the menu or to add to the menu, so we have to go back into our manifest.json,
+
+5
+00:00:28,000 --> 00:00:33,000
+and inside here, what we want to do is add a permission for the menu.
+
+6
+00:00:33,000 --> 00:00:40,000
+So we're going to do a permission here for contextMenus.
+
+7
+00:00:40,000 --> 00:00:49,000
+Now, we can go into our event page, and inside here, we're going to create a new menu item and then we're
+
+8
+00:00:49,000 --> 00:00:54,000
+going to register for an onClicked on the context menu. So let's go ahead and add this above here.
+
+9
+00:00:54,000 --> 00:01:00,000
+So we're going to create a variable called menuItem and we're going to set this equal to an object that
+
+10
+00:01:00,000 --> 00:01:06,000
+we'll create here that will have an id, which will be equal to addProtein.
+
+11
+00:01:06,000 --> 00:01:11,000
+This is how we'll uniquely identify our menuItem that we're going to add.
+
+12
+00:01:11,000 --> 00:01:19,000
+Then our menuItem will have a title, it will be called addProtein, and then it will have certain contexts
+
+13
+00:01:19,000 --> 00:01:25,000
+that it'll operate in, and again, you can check the API documentation to find out what all the contexts are,
+
+14
+00:01:25,000 --> 00:01:32,000
+but we want this to operate on selection. So this is going to basically appear on the context menu when
+
+15
+00:01:32,000 --> 00:01:38,000
+some text is selected on a page and only in that instance; it's not going to appear if you just right-click
+
+16
+00:01:38,000 --> 00:01:49,000
+without selecting anything. So now all we have to do is call chrome.contextMenus.create and we're going to
+
+17
+00:01:49,000 --> 00:01:56,000
+pass in our menuItem. This will make sure that our menuItem gets added to the contextMenus, but it's not
+
+18
+00:01:56,000 --> 00:02:03,000
+good enough just to add that, we need to create an event handler so that we can listen to any onClicked event
+
+19
+00:02:03,000 --> 00:02:14,000
+or any time a menuItem is clicked. So we're going to do chrome.contextMenus.onClicked.addListener.
+
+20
+00:02:14,000 --> 00:02:22,000
+So now we're going to specify a function that has clickData and we're going to basically execute this
+
+21
+00:02:22,000 --> 00:02:29,000
+function whenever a context menu item is clicked. So what we want to do here is first we want to check to
+
+22
+00:02:29,000 --> 00:02:38,000
+make sure this is our menu item, so we're going to say if(clickData.menuItemId == "addProtein".
+
+23
+00:02:38,000 --> 00:02:45,000
+So if it's our menuItem &amp;&amp;, we're going to make sure that there's actually some selection text,
+
+24
+00:02:45,000 --> 00:02:55,000
+so let's do clickData.selectionText. So as long as we have some text then we're good to go.
+
+25
+00:02:55,000 --> 00:03:00,000
+And the way that I know what's available on clickData is, again, you can check that API documentation for
+
+26
+00:03:00,000 --> 00:03:06,000
+the chrome APIs, and for the onClicked, it shows you what clickData has in it.
+
+27
+00:03:06,000 --> 00:03:09,000
+There's a bunch of different properties that you can get about the menu item.
+
+28
+00:03:09,000 --> 00:03:16,000
+So now what we want to do is we want to make sure that this is a number, so I'm going to actually use
+
+29
+00:03:16,000 --> 00:03:20,000
+the regex here; I'm just going to say intRegex. There's a lot of different ways you can check for a number,
+
+30
+00:03:20,000 --> 00:03:29,000
+but this is a sure way to make sure that you have a number. And then we're going to go ahead and say,
+
+31
+00:03:29,000 --> 00:03:38,000
+if(intRegex.test, that'll test to see if whatever we passed in here conforms to this regex, and we're going
+
+32
+00:03:38,000 --> 00:03:45,000
+to get clickData.selectionText. So we're actually going to get the text that's selected.
+
+33
+00:03:45,000 --> 00:03:52,000
+So if that is a number then what we want to do is create a variable called newTotal, but before we do that,
+
+34
+00:03:52,000 --> 00:03:59,000
+let's go ahead and do a get on the existing total. We're going to create some logic sort of like what we
+
+35
+00:03:59,000 --> 00:04:07,000
+created before when we added the amount to the total, so let's do our chrome.storage.sync.get and then we
+
+36
+00:04:07,000 --> 00:04:16,000
+want to get the total, and then we're going to specify our callback here, so we're going to say function(items)
+
+37
+00:04:16,000 --> 00:04:24,000
+and then inside here we're going to say var newTotal = 0 and then we're going to check if(items.total.
+
+38
+00:04:24,000 --> 00:04:38,000
+So if there is a total, then we'll go ahead and do newTotal += parseInt(items.total), so we'll go ahead
+
+39
+00:04:38,000 --> 00:04:50,000
+and add that to our new total. And then we can do a newTotal += parseInt(clickData.selectionText),
+
+40
+00:04:50,000 --> 00:04:56,000
+so we know that the selectionText is actually an integer, and if that's the case, then we can just add
+
+41
+00:04:56,000 --> 00:05:01,000
+that to our new total. So this is going to effectively increment our total by whatever the text that's selected,
+
+42
+00:05:01,000 --> 00:05:09,000
+by whatever that number is. So then we just need to save this, so we'll do chrome.storage.sync.set, and
+
+43
+00:05:09,000 --> 00:05:17,000
+then we'll create our object here with the total property and we'll set it equal to newTotal.
+
+44
+00:05:17,000 --> 00:05:23,000
+Okay, so that should be it. Now this should run when our event page runs, so we'll end up getting this
+
+45
+00:05:23,000 --> 00:59:00,000
+contextMenus.create, that'll create our menuItem, and then we'll subscribe to this onClicked for contextMenus.
+

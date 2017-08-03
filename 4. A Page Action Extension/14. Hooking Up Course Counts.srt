@@ -1,0 +1,108 @@
+1
+00:00:01,000 --> 00:00:06,000
+Okay, so the next thing that we're going to do is we're going to go ahead and implement our functionality;
+
+2
+00:00:06,000 --> 00:00:14,000
+we're going to make it so that when a user clicks on that page action, that show course count, it's going
+
+3
+00:00:14,000 --> 00:00:20,000
+to actually show the count of the number of courses on that page for an author next to the author's name,
+
+4
+00:00:20,000 --> 00:00:25,000
+so it's going to add them up and show that. So in order to do that, what we're going to do is we're going
+
+5
+00:00:25,000 --> 00:00:32,000
+to hook up in our popup.html this courseCounts button. We're going to make it actually send a message to
+
+6
+00:00:32,000 --> 00:00:37,000
+the correct tab to that content script, and then that content script that's running on that page is going
+
+7
+00:00:37,000 --> 00:00:45,000
+to go ahead and execute some JavaScript that will go ahead and modify that page and show those courseCounts.
+
+8
+00:00:45,000 --> 00:00:50,000
+So, let's go ahead and create this popup.js; we're just going to be using jQuery like we did before.
+
+9
+00:00:50,000 --> 00:01:02,000
+So we're just going to do our function here and then we need to go ahead and setup our handler, so we're
+
+10
+00:01:02,000 --> 00:01:13,000
+going to do (‘#courseCounts').click and that should match this courseCounts here - let's just double check.
+
+11
+00:01:13,000 --> 00:01:21,000
+Okay, and then we want to give the function here that it's going to call, and for this function, what we're
+
+12
+00:01:21,000 --> 00:01:27,000
+going to want to do is the same thing that we had done before. So I'm just going to actually copy this in
+
+13
+00:01:27,000 --> 00:01:34,000
+order to query all of our tabs. So, we're just going to do chrome.tabs.query, look for the active and current one.
+
+14
+00:01:34,000 --> 00:01:41,000
+Now we need to do this because we have to send a message to a specific tab, we want to send it to whatever
+
+15
+00:01:41,000 --> 00:01:47,000
+the current tab is, because remember, content_scripts could be running on multiple tabs, we could have
+
+16
+00:01:47,000 --> 00:01:50,000
+multiple content_scripts running, so we have to know what tab we're sending this to.
+
+17
+00:01:50,000 --> 00:01:58,000
+We're going to send it to the active one. So now we're going to actually call chrome.tabs.sendMessage and
+
+18
+00:01:58,000 --> 00:02:05,000
+this is how we send a message to a tab and we want to send it to tabs, the 0 with index — that'll give us the id,
+
+19
+00:02:05,000 --> 00:02:12,000
+and then we're going to do action: "courseCounts", and I do want to point out here that you can pass
+
+20
+00:02:12,000 --> 00:02:18,000
+whatever object you want. I just happened to be creating an object that has a property action that has
+
+21
+00:02:18,000 --> 00:02:23,000
+the value of what the action is, but I'm just using that for convention; it doesn't matter what you pass here,
+
+22
+00:02:23,000 --> 00:02:29,000
+whatever message you want to pass you can pass, and however you want to do your messaging - it's basically
+
+23
+00:02:29,000 --> 00:02:33,000
+open to however you want to use this. So let's go ahead and save this.
+
+24
+00:02:33,000 --> 00:02:41,000
+And now what's going to happen is when we show our user interface for our popup.html for that pageAction,
+
+25
+00:02:41,000 --> 00:02:47,000
+it's going to go ahead and execute this JavaScript for a popup.js, which will basically hook up to that click.
+
+26
+00:02:47,000 --> 00:02:54,000
+So when someone clicks that button in the UI, it's going to go ahead and figure out what the active tab is
+
+27
+00:02:54,000 --> 00:59:00,000
+and then send this courseCounts a message.
+

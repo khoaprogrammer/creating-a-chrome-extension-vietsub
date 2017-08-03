@@ -1,0 +1,52 @@
+1
+00:00:01,000 --> 00:00:05,000
+We've already briefly mentioned Content Scripts, but let's dive a little deeper now that we have more of
+
+2
+00:00:05,000 --> 00:00:12,000
+an understanding of how extensions work in Chrome. Up till this point, everything we've done as an extension
+
+3
+00:00:12,000 --> 00:00:18,000
+has worked at a high level. Nothing we created so far actually manipulated an actual web page and its data.
+
+4
+00:00:18,000 --> 00:00:24,000
+In fact, using browser actions, page actions, and even background pages and event pages, we can't actually
+
+5
+00:00:24,000 --> 00:00:31,000
+do much to a page itself. In order to actually manipulate a loaded page with our extension, we need to use
+
+6
+00:00:31,000 --> 00:00:38,000
+a content script. Content scripts are registered in the manifest file and include a Matches property to
+
+7
+00:00:38,000 --> 00:00:44,000
+determine what pages the content scripts will run on. Most often this is a URL with a wild card.
+
+8
+00:00:44,000 --> 00:00:50,000
+For example, with our extension, we'll be running our content scripts on certain Pluralsight URLs.
+
+9
+00:00:50,000 --> 00:00:56,000
+The content script itself can be JavaScript or CSS. You can really think of the content script as being
+
+10
+00:00:56,000 --> 00:01:01,000
+some additional JavaScript or CSS that's run when a certain page loads.
+
+11
+00:01:01,000 --> 00:01:09,000
+Content scripts basically get tacked onto a loaded page and can operate on those pages like any other script or CSS,
+
+12
+00:01:09,000 --> 00:01:16,000
+but content scripts can't actually utilize most of the functionality of the chrome APIs available to other
+
+13
+00:01:16,000 --> 00:59:00,000
+parts of an extension; they have to pass messages to get their work done, which we'll talk about next.
+

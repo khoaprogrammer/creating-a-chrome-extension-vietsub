@@ -1,0 +1,92 @@
+1
+00:00:01,000 --> 00:00:07,000
+Okay, so in our browser now, if we click our extension, we've got our Protein Tracker UI coming up,
+
+2
+00:00:07,000 --> 00:00:12,000
+and if we right-click here, we should be seeing Options. Now we're not going to see Options just yet,
+
+3
+00:00:12,000 --> 00:00:19,000
+because we haven't reloaded this plug-in. Again, we've changed the manifest file so we do need to reload this,
+
+4
+00:00:19,000 --> 00:00:26,000
+so let's go ahead and go to reload here and now if we right-click here we see Options and when we click that
+
+5
+00:00:26,000 --> 00:00:35,000
+you'll notice it opens up a new tab that has our Options. So now we can type in a Goal, let's say we put in 100,
+
+6
+00:00:35,000 --> 00:00:41,000
+and if we click Save, it closes that. Now we don't have this Goal showing up here; we'll need to implement
+
+7
+00:00:41,000 --> 00:00:47,000
+that functionality, but our Options page should work. So if we right-click, go to Options, you can see the
+
+8
+00:00:47,000 --> 00:00:54,000
+Goal is populated at 100 there. We should also be able to reset the Total, so right now our Total is 38.
+
+9
+00:00:54,000 --> 00:00:59,000
+So let's go ahead and click this Reset Total, and now you can see that the Total is 0.
+
+10
+00:00:59,000 --> 00:01:03,000
+So we have most of that functionality working; at this point the only thing we really need to add is the
+
+11
+00:01:03,000 --> 00:01:12,000
+ability to show this goal here, so that shows up in this UI. So let's go ahead and do that real quick.
+
+12
+00:01:12,000 --> 00:01:20,000
+What we want to do for this is we're just going to go back into our popup.html and what we want to do is
+
+13
+00:01:20,000 --> 00:01:27,000
+we want to populate this here. So we're going to need to put in a value and let's just call this id goal
+
+14
+00:01:27,000 --> 00:01:33,000
+and then we want to go into our popup.js, and here, the way that we're going to do this is we're going to
+
+15
+00:01:33,000 --> 00:01:38,000
+get back both the total and the goal at the same time here when we first load up this page.
+
+16
+00:01:38,000 --> 00:01:45,000
+So, instead of just passing in a string, we can pass in an array of strings, and we do that in JavaScript notation,
+
+17
+00:01:45,000 --> 00:01:49,000
+like this with the brackets, so we're going to ask for goal and total.
+
+18
+00:01:49,000 --> 00:01:54,000
+So we should get back both of those things and then all we're going to do here is we're just going to say,
+
+19
+00:01:54,000 --> 00:02:01,000
+okay, give us the goal, set the text equal to items.goal, and that should pretty much do it.
+
+20
+00:02:01,000 --> 00:02:06,000
+Let's go ahead and open up our browser window.
+
+21
+00:02:06,000 --> 00:02:10,000
+And we should just be able to go here now and we can see our Goal.
+
+22
+00:02:10,000 --> 00:02:19,000
+So now if we go to Options, let's change this to, say 150 and save it, and then we'll re-open up our extension,
+
+23
+00:02:19,000 --> 00:59:00,000
+and you can see that the goal is set to 150. We can still add protein, that works, and we should see our goal in our Options.
+

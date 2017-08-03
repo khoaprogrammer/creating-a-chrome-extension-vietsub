@@ -1,0 +1,84 @@
+1
+00:00:01,000 --> 00:00:04,000
+So the first thing that we're going to do is we're going to create our directory that we're going to create
+
+2
+00:00:04,000 --> 00:00:08,000
+our extension in, so I'm just going to create this directory called ProteinTracker, and inside here we're
+
+3
+00:00:08,000 --> 00:00:18,000
+going to create our manifest file. So I'm just going to add a new text document and I'm just going to call this
+
+4
+00:00:18,000 --> 00:00:26,000
+manifest.json and we're going to create this file just like we did for our first Hello World extension;
+
+5
+00:00:26,000 --> 00:00:30,000
+I'm just going to go ahead and open this up in Visual Studio.
+
+6
+00:00:30,000 --> 00:00:36,000
+And like I said, you can use whatever editor that you want and what we're going to do is we're just going
+
+7
+00:00:36,000 --> 00:00:42,000
+to go ahead and set all the properties for this manifest file. So remember, there are a few things that
+
+8
+00:00:42,000 --> 00:00:49,000
+we need to have - we need to have the manifest_version and this is going to be version 2 because that's
+
+9
+00:00:49,000 --> 00:00:54,000
+the current version of the manifest, the latest version, and then we want to give this a name, which we'll
+
+10
+00:00:54,000 --> 00:01:01,000
+have to specify, so we're going to call this Protein Tracker, and then let's go ahead and add a description.
+
+11
+00:01:01,000 --> 00:01:14,000
+This one is optional, but we want to have a description, so let's say "Tracks a user's protein totals
+
+12
+00:01:14,000 --> 00:01:20,000
+throughout the day." Then we're going to want the version for our actual extension, which we're just going
+
+13
+00:01:20,000 --> 00:01:26,000
+to make this 1.0 to start with, and now we're going to want to add our browser action, because remember
+
+14
+00:01:26,000 --> 00:01:33,000
+this is of type browser_action. In the next module we'll be creating a page_action one, but in this one
+
+15
+00:01:33,000 --> 00:01:40,000
+we are using a browser_action, which means that it's going to show up in that toolbar always.
+
+16
+00:01:40,000 --> 00:01:47,000
+And with this browser_action, we're creating a new object inside here, a nested object, so you can think of
+
+17
+00:01:47,000 --> 00:01:55,000
+these as sort of subproperties. So we have our default_icon and we're just going to call this icon.png,
+
+18
+00:01:55,000 --> 00:02:01,000
+just like we did before, and then for our default_popup, we're going to do the same thing as well and we're
+
+19
+00:02:01,000 --> 00:02:08,000
+just going to call this popup.html. And that's all we're going to do for our manifest at this point.
+
+20
+00:02:08,000 --> 00:02:14,000
+We'll be adding some things later to this manifest when we need to add some permissions and an options page
+
+21
+00:02:14,000 --> 00:59:00,000
+and our background page, but for now that's all we'll need.
+

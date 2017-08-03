@@ -1,0 +1,44 @@
+1
+00:00:01,000 --> 00:00:07,000
+Extensions can be as simple as a single manifest file and an HTML or JavaScript file.
+
+2
+00:00:07,000 --> 00:00:13,000
+But, most extensions will make use of several different kinds of files to create the desired functionality.
+
+3
+00:00:13,000 --> 00:00:19,000
+To start creating an extension you just need to create a directory in which you'll put all the files that
+
+4
+00:00:19,000 --> 00:00:26,000
+extension will use. In this directory you'll have to at least have a manifest file which is a JSON formatted
+
+5
+00:00:26,000 --> 00:00:32,000
+file that describes the properties of the extension. If your extension is going to have a user interface,
+
+6
+00:00:32,000 --> 00:00:37,000
+you'll probably need to include one or more HDML files in the directory as well.
+
+7
+00:00:37,000 --> 00:00:44,000
+Extensions can also have icons which are used in the Chrome store and the manage extensions tab in Chrome
+
+8
+00:00:44,000 --> 00:00:49,000
+and to display the extension in the Chrome toolbar. Those icon files should also be included in this
+
+9
+00:00:49,000 --> 00:00:56,000
+extensions directory. JavaScript files, CSS, and Images or any other files needed by the extension can
+
+10
+00:00:56,000 --> 00:01:01,000
+be included in there as well. Everything in the directory can be referenced using relative paths starting
+
+11
+00:01:01,000 --> 00:59:00,000
+from this directory. So, the Chrome extension directory is like a self-contained HTML application.
+

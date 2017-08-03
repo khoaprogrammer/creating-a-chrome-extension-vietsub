@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:07,000
+Surprisingly, chrome extensions can be debugged just like any other web page in Chrome, but you can't just
+
+2
+00:00:07,000 --> 00:00:14,000
+open up the Chrome Dev Tools on any page to debug your extension, instead, you need to open up the Chrome Dev Tools
+
+3
+00:00:14,000 --> 00:00:20,000
+for the extension UI pages or background pages. I'll show you how to do both next.
+
+4
+00:00:20,000 --> 00:00:26,000
+Using the Chrome Dev Tools, you can see the HTML markup, as well as the CSS styles applied, and even set
+
+5
+00:00:26,000 --> 00:00:32,000
+breakpoints in JavaScript so you can figure out exactly what's going on in your extension, but sometimes it
+
+6
+00:00:32,000 --> 00:00:38,000
+is easiest to just throw the old alert code in your extension to show a message box, or better yet,
+
+7
+00:00:38,000 --> 00:59:00,000
+to log to the Chrome console to debug an extension. Let's take a look at some of the ways of debugging extensions next.
+

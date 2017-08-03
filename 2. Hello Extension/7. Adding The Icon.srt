@@ -1,0 +1,80 @@
+1
+00:00:01,000 --> 00:00:06,000
+Okay, so at this point we can almost preview our extension by loading it into Chrome.
+
+2
+00:00:06,000 --> 00:00:10,000
+The only thing that we really need in order to do this at this point is our
+
+3
+00:00:10,000 --> 00:00:14,000
+PNG for our icon. So, I'm going to go ahead and go to our directory here.
+
+4
+00:00:14,000 --> 00:00:18,000
+And I've already created an icon.png, I'm just going to Paste this in here.
+
+5
+00:00:18,000 --> 00:00:25,000
+Let's take a look at that real quick. It's just a picture of a world here for our Hello World
+
+6
+00:00:25,000 --> 00:00:30,000
+that I just created. It's just a 19x19 pixel icon.
+
+7
+00:00:30,000 --> 00:00:35,000
+It's a PNG file. So, that's specified in our manifest.json file which we're definitely going to need
+
+8
+00:00:35,000 --> 00:00:42,000
+in order to be able to load this and test this out. And so, let's go ahead and go to our browser.
+
+9
+00:00:42,000 --> 00:00:47,000
+And what I'm going to do here is I'm going to go ahead and go to extensions.
+
+10
+00:00:47,000 --> 00:00:54,000
+So, we're just going to do chrome://extensions and then I'm going to switch Developer mode on.
+
+11
+00:00:54,000 --> 00:00:59,000
+So, by default this will be off. It we click Developer mode you'll see this Load unpacked extension.
+
+12
+00:00:59,000 --> 00:01:05,000
+We can go here and we can just browse to the directory that contains our extensions.
+
+13
+00:01:05,000 --> 00:01:08,000
+So, this Hello World directory.
+
+14
+00:01:08,000 --> 00:01:15,000
+So, then I'm going to click OK. And now you can see it's loaded this extension and we can see that it
+
+15
+00:01:15,000 --> 00:01:21,000
+is set up, it's Enabled. We can remove it here if we want to. And you should see it show up in the bar now.
+
+16
+00:01:21,000 --> 00:01:29,000
+So now, if I click this, you can see it shows this HTML. That's all we really need to create an extension
+
+17
+00:01:29,000 --> 00:01:35,000
+at this point. Now, we're going to add a little bit more functionality to our extension just to see how things work.
+
+18
+00:01:35,000 --> 00:01:38,000
+We're going to keep things pretty simple, but that's really the basics.
+
+19
+00:01:38,000 --> 00:01:45,000
+We just have a manifest file that specifies an icon that specifies the HTML and we just have a simple HTML page.
+
+20
+00:01:45,000 --> 00:59:00,000
+You can make an extension that is really this simple.
+

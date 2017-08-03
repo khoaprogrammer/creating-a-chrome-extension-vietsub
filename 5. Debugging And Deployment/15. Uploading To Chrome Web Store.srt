@@ -1,0 +1,228 @@
+1
+00:00:01,000 --> 00:00:05,000
+Alright, so let's take a look at the Chrome Developer Dashboard and how we would actually upload an app.
+
+2
+00:00:05,000 --> 00:00:11,000
+So the easiest way to get there is probably just to type in chrome developer dashboard into Google,
+
+3
+00:00:11,000 --> 00:00:17,000
+because you can see the URL here is chrome.google.com/webstore/developer/dashboard,
+
+4
+00:00:17,000 --> 00:00:20,000
+so that's a little bit hard to type in.
+
+5
+00:00:20,000 --> 00:00:26,000
+And when you go there, you'll need to authenticate with a Google account, so you can see that I'm signed
+
+6
+00:00:26,000 --> 00:00:32,000
+in to my main Gmail account. And let's go ahead and go back to the Dashboard, and here at this Dashboard,
+
+7
+00:00:32,000 --> 00:00:39,000
+you can see any of the extensions I've already published or apps, chrome web store apps, I just have the
+
+8
+00:00:39,000 --> 00:00:44,000
+Pluralsight Helper, which I've already tried to publish, so I've already just put this out here and it can be
+
+9
+00:00:44,000 --> 00:00:50,000
+accessed from a link and we have some information about the developer account and some basic settings you can modify.
+
+10
+00:00:50,000 --> 00:00:54,000
+Now all you have to do is click this ‘Add new Item',
+
+11
+00:00:54,000 --> 00:01:00,000
+and then it'll have you upload an extension or app and it says a .zip file, so one thing to make note of
+
+12
+00:01:00,000 --> 00:01:06,000
+here is this first item - it says "Upload a ZIP file of your item directory, not a packaged CRX file."
+
+13
+00:01:06,000 --> 00:01:13,000
+So you don't want to upload the CRX file, and part of the reason for that is because the web store's
+
+14
+00:01:13,000 --> 00:01:16,000
+actually going to package it for you, and remember, we have this whole signing with the private key,
+
+15
+00:01:16,000 --> 00:01:23,000
+well it's going to be signing it based on some security credentials on your Google account so that you won't
+
+16
+00:01:23,000 --> 00:01:31,000
+have to actually include your own private key. Just by uploading your app or your extension through your account,
+
+17
+00:01:31,000 --> 00:01:37,000
+Google will know that it's you. So, what we're going to do is we're just going to go to
+
+18
+00:01:37,000 --> 00:01:42,000
+our directory and all we basically have to do in here is to zip this up.
+
+19
+00:01:42,000 --> 00:01:49,000
+So I'm just going to go to Creating Chrome Extension, let's go ahead and do, let's say our Protein Tracker.
+
+20
+00:01:49,000 --> 00:01:56,000
+So I'm just going to do a zip here, just ProteinTracker.zip, so now I have this zip file and all I'm going
+
+21
+00:01:56,000 --> 00:02:02,000
+to do is choose this file. So I'm just going to go in here and we will find our
+
+22
+00:02:02,000 --> 00:02:06,000
+ProteinTracker.zip, then we just click Upload,
+
+23
+00:02:06,000 --> 00:02:15,000
+and then it will take us to our Edit Items screen where we can edit everything here, and it has pretty good descriptions.
+
+24
+00:02:15,000 --> 00:02:18,000
+You can see that I don't have an icon so it's not showing my icon here.
+
+25
+00:02:18,000 --> 00:02:24,000
+We can put in our detailed description, we can upload a new icon here, and it has all the details about
+
+26
+00:02:24,000 --> 00:02:30,000
+the particular icon sizes. There's a lot here to pay attention to if you want to get everything just right,
+
+27
+00:02:30,000 --> 00:02:36,000
+but it's really important if you're making an extension that's going to be downloaded by other people and
+
+28
+00:02:36,000 --> 00:02:39,000
+you want to have it look nice, you'll probably want to follow all these instructions.
+
+29
+00:02:39,000 --> 00:02:46,000
+Same thing with the screenshots; you can link to a YouTube video, which is probably a good idea to show
+
+30
+00:02:46,000 --> 00:02:51,000
+how to use your extension. It also has these Promotional tile images; these are those images that you see
+
+31
+00:02:51,000 --> 00:02:56,000
+in the Chrome Web Store; again, good if you're trying to market this.
+
+32
+00:02:56,000 --> 00:03:05,000
+And then the tile previews. And then here is an important part — this is where you verify that this is
+
+33
+00:03:05,000 --> 00:03:09,000
+an item for your website. So, it's going to show me any of the verified sites that I have connected with
+
+34
+00:03:09,000 --> 00:03:14,000
+this account, so my simpleprogrammer.com, for example, I could use that here.
+
+35
+00:03:14,000 --> 00:03:22,000
+I can also put a link to my website or to my Support in FAQ for this chrome extension if I have one here.
+
+36
+00:03:22,000 --> 00:03:28,000
+Then you want to select a category and this can be whatever category that you have.
+
+37
+00:03:28,000 --> 00:03:35,000
+Let's put this under Fun and then you can decide what regions you want your extension to be available in.
+
+38
+00:03:35,000 --> 00:03:41,000
+The language; you do have to select a language. A lot of these other options are optional, you don't have
+
+39
+00:03:41,000 --> 00:03:47,000
+to specify a lot of these things, but you do need a language. And then you can actually hook up your Google Analytics here.
+
+40
+00:03:47,000 --> 00:03:55,000
+Now what this will do is this is going to basically just track the usage of this extension, but not the usage
+
+41
+00:03:55,000 --> 00:03:59,000
+inside the extension. What I mean is you're going to be able to track how many people are downloading and
+
+42
+00:03:59,000 --> 00:04:04,000
+using the extension, not actually what they're doing in the extension.
+
+43
+00:04:04,000 --> 00:04:11,000
+And then we have any requirements that are specified in the manifest file and then this little thing for
+
+44
+00:04:11,000 --> 00:04:19,000
+ads behavior. If you're injecting ads, that's probably not a good idea, but --- and then the visibility options here.
+
+45
+00:04:19,000 --> 00:04:23,000
+Now this is going to control how you're going to be able to distribute this.
+
+46
+00:04:23,000 --> 00:04:28,000
+So, the default is all Chrome Web Store users; that's going to make it so your extension is visible just
+
+47
+00:04:28,000 --> 00:04:33,000
+in the Chrome Web Store. You can just say people with the link, which will hide it so that someone has to
+
+48
+00:04:33,000 --> 00:04:39,000
+has to have the link. It's not a secure way of having your app be in the web store — you can't count on
+
+49
+00:04:39,000 --> 00:04:46,000
+no one being able to get access to it that you don't allow, but this is a way to; for example, if you have
+
+50
+00:04:46,000 --> 00:04:52,000
+a company extension but you want to distribute it through the Chrome Web Store, this is a great way to do it
+
+51
+00:04:52,000 --> 00:04:56,000
+because it's not going to show up when people search for it. And then trusted testers; you can set up
+
+52
+00:04:56,000 --> 00:05:02,000
+tester accounts that you can manage from that Developer Dashboard and you can just set this up just for
+
+53
+00:05:02,000 --> 00:05:08,000
+people to be able to test it. So then all you have to do is you can either Save draft and return to
+
+54
+00:05:08,000 --> 00:05:12,000
+Dashboard or you can just preview it or publish it right here.
+
+55
+00:05:12,000 --> 00:05:17,000
+So we could actually save our draft and we could click Publish if we want to publish this;
+
+56
+00:05:17,000 --> 00:05:22,000
+I'm not going to publish this at this point, because we don't really want to actually publish this, but that's
+
+57
+00:05:22,000 --> 00:59:00,000
+pretty much it. It's really simple, really easy to get this setup and to get an extension in the Chrome Web Store.
+

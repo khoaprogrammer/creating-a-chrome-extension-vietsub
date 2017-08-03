@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:07,000
+Hi, this is John Sonmez from Pluralsight and in this module we'll be creating a simple Hello World
+
+2
+00:00:07,000 --> 00:00:12,000
+extension for Chrome. Chrome extensions themselves are pretty easy to create.
+
+3
+00:00:12,000 --> 00:00:19,000
+But, all the extra JavaScript and functionality inside of an extension can make it seem much more complex.
+
+4
+00:00:19,000 --> 00:00:26,000
+To avoid any of this complexity, we'll be creating a very basic browser action extension that just shows a
+
+5
+00:00:26,000 --> 00:00:32,000
+basic UI where a user can type in their name and see it echoed back to them with a greeting.
+
+6
+00:00:32,000 --> 00:00:38,000
+This basic extension will help us understand how extensions are put together and get us some experience
+
+7
+00:00:38,000 --> 00:00:43,000
+with going through that process before creating a more complicated extension like we'll do
+
+8
+00:00:43,000 --> 00:00:49,000
+in the following modules. By the end of this module you should understand the components you need
+
+9
+00:00:49,000 --> 00:00:54,000
+in order to create a Chrome extension and know how to add an extension you're developing
+
+10
+00:00:54,000 --> 00:59:00,000
+to an instance of Chrome to test it out.
+

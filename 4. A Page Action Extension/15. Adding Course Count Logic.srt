@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:04,000
+Okay, so the next thing that we'll need to do is to actually
+
+2
+00:00:04,000 --> 00:00:08,000
+make it so that our content_scripts has a listener to be able to receive the message.
+
+3
+00:00:08,000 --> 00:00:14,000
+So we're going to go back into our content script and remember we were just sending this message before,
+
+4
+00:00:14,000 --> 00:00:24,000
+but now we're actually going to do this chrome.runtime.onMessage.addListener, so this will make sure that
+
+5
+00:00:24,000 --> 00:00:30,000
+we're listening for messages, and then we're going to have a callback — that'll be a function that takes
+
+6
+00:00:30,000 --> 00:00:42,000
+a request and then a sender and then a sendResponse. Then inside here, we're just going to check to see
+
+7
+00:00:42,000 --> 00:00:52,000
+what the message was, so we're going to say if(request.action == "courseCounts", then that's the one that we
+
+8
+00:00:52,000 --> 00:00:56,000
+want to handle, so we will do something with this message. So we're going to actually implement the
+
+9
+00:00:56,000 --> 00:01:06,000
+functionality to add up the courses per author and go ahead and change the DOM or change the HTML that's in
+
+10
+00:01:06,000 --> 00:01:12,000
+that page to show the courseCounts next to the author name. Now I'm just going to copy some code that I had
+
+11
+00:01:12,000 --> 00:01:17,000
+written before to do this and we're not going to go over this code, because this isn't really important to
+
+12
+00:01:17,000 --> 00:01:24,000
+creating the extension, but it basically just goes through, finds out all the authors, it creates this map,
+
+13
+00:01:24,000 --> 00:01:31,000
+and counts up each one of the courses, and then it's going to go ahead and modify the actual DOM to display
+
+14
+00:01:31,000 --> 00:59:00,000
+the author name followed by the course count. Okay, so let's go ahead and test this out next.
+

@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:03,000
+Okay, so now let's go ahead and implement the functionality.
+
+2
+00:00:03,000 --> 00:00:09,000
+We're going to do this in a very similar way as how we did the previous one, so we're going to make this
+
+3
+00:00:09,000 --> 00:00:19,000
+makeSortable button work. We're just going to go to our popup.js, and inside here, we're basically going to
+
+4
+00:00:19,000 --> 00:00:24,000
+do the same thing, so I'm just going to copy this and paste this, and we want to make sure that we have
+
+5
+00:00:24,000 --> 00:00:30,000
+the right id, it's makeSortable, so I'm going to copy here and paste this in here.
+
+6
+00:00:30,000 --> 00:00:35,000
+So now when makeSortable is clicked, what we're going to do is we're going to send a message, except instead
+
+7
+00:00:35,000 --> 00:00:42,000
+of sending the message courseCounts, we're going to send the message makeSortable.
+
+8
+00:00:42,000 --> 00:00:47,000
+I'll go ahead and save that, and then on the other end we need to receive this message.
+
+9
+00:00:47,000 --> 00:00:57,000
+So if we go to our content script, so this Pluralsight_cs, we'll go ahead and go there, here we're going to
+
+10
+00:00:57,000 --> 00:01:02,000
+check for the other request.action, we're going to check to see if we have makeSortable, right now we're
+
+11
+00:01:02,000 --> 00:01:06,000
+just checking for course count. So we'll go ahead and put another if here, so we'll just say,
+
+12
+00:01:06,000 --> 00:01:17,000
+if(request.action == "makeSortable", then we're going to go ahead and make the table sortable.
+
+13
+00:01:17,000 --> 00:01:22,000
+And the way that we're going to do this is we're going to grab the table; this table happens to have a class
+
+14
+00:01:22,000 --> 00:01:30,000
+with the name course, so we're just going to check for this .course, which will give us our table,
+
+15
+00:01:30,000 --> 00:01:39,000
+and then all we have to do with this jQuery plug-in for data table is just say dataTable, it's basically
+
+16
+00:01:39,000 --> 00:01:46,000
+adding this method to the table class, and we can pass in some parameters as an object.
+
+17
+00:01:46,000 --> 00:01:53,000
+And so we're just going to pass in this bPaginate and set it equal to false and what this will do is it'll
+
+18
+00:01:53,000 --> 00:01:57,000
+make sure that it doesn't page our results; otherwise, it's going to page our results.
+
+19
+00:01:57,000 --> 00:02:04,000
+We don't want them paged because we want to use the actual paging that's already in the Pluralsight pages;
+
+20
+00:02:04,000 --> 00:02:09,000
+we don't want to page this by 10 rows, otherwise we won't get all the rows that exist.
+
+21
+00:02:09,000 --> 00:02:13,000
+And that's it, that's how simple it is to add this functionality.
+
+22
+00:02:13,000 --> 00:02:21,000
+All we're doing here really is we're just basically modifying the page, we're running this script from this message.
+
+23
+00:02:21,000 --> 00:59:00,000
+So now we can go ahead and test this out.
+

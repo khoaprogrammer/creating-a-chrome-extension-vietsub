@@ -1,0 +1,84 @@
+1
+00:00:01,000 --> 00:00:06,000
+This course is broken up into five modules which will take us through the basics, the creation of
+
+2
+00:00:06,000 --> 00:00:11,000
+three Chrome extensions, and then finally, the important issues of debugging in deployment.
+
+3
+00:00:11,000 --> 00:00:16,000
+We'll start with the first module which you're currently watching in which we'll discuss the basics of
+
+4
+00:00:16,000 --> 00:00:21,000
+Chrome extensions and how they work. And discover just how much you can actually do with some simple
+
+5
+00:00:21,000 --> 00:00:25,000
+JavaScript code thanks to Chrome's extensive APIs.
+
+6
+00:00:25,000 --> 00:00:31,000
+Then in Module 2, we'll create our first extension. This extension won't do much, it'll be a basic
+
+7
+00:00:31,000 --> 00:00:37,000
+Hello World extension, but it will give us a chance to go over the basics of the mechanical process
+
+8
+00:00:37,000 --> 00:00:42,000
+of creating an extension and learn how the different technologies and pieces fit together to
+
+9
+00:00:42,000 --> 00:00:48,000
+create the final Chrome extension bundle. This module should help you gain the confidence that creating an
+
+10
+00:00:48,000 --> 00:00:52,000
+actual extension itself is pretty easy.
+
+11
+00:00:52,000 --> 00:00:57,000
+Once we have created a basic extension, it'll be time to do something a little more useful.
+
+12
+00:00:57,000 --> 00:01:03,000
+In Module 3 we'll create a browser action extension which is just an extension that will give an icon
+
+13
+00:01:03,000 --> 00:01:09,000
+in the browser that can be clicked to display a UI. You've probably seen many of these types of extensions
+
+14
+00:01:09,000 --> 00:01:14,000
+before because they are the most common and most obvious types of extensions.
+
+15
+00:01:14,000 --> 00:01:21,000
+Then in Module 4 we'll create a page action extension. This kind of extension runs in the back ground and
+
+16
+00:01:21,000 --> 00:01:27,000
+modifies a web page by adding capabilities to it. It isn't as prominent as a browser action extension,
+
+17
+00:01:27,000 --> 00:01:33,000
+but it is a very powerful capability of Chrome extensions that can do some pretty awesome things.
+
+18
+00:01:33,000 --> 00:01:37,000
+In Module 5 we'll learn two important things about Chrome extensions.
+
+19
+00:01:37,000 --> 00:01:42,000
+First, how to debug them using the Chrome developer tools, and then how to deploy them.
+
+20
+00:01:42,000 --> 00:01:47,000
+We'll see how we can package up a Chrome extension and submit it to the Chrome Web Store so that
+
+21
+00:01:47,000 --> 00:59:00,000
+others can download it and make use of it.
+

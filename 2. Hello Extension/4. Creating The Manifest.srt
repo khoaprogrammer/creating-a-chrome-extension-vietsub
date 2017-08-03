@@ -1,0 +1,184 @@
+1
+00:00:01,000 --> 00:00:05,000
+So, the first thing that we'll need to do to create our extension is to go ahead and create a folder
+
+2
+00:00:05,000 --> 00:00:11,000
+that we're going to create the extension in. So, we're just going to create a folder here called Hello World.
+
+3
+00:00:11,000 --> 00:00:15,000
+And inside here we're going to place all of our files.
+
+4
+00:00:15,000 --> 00:00:19,000
+And the file that we're going to start with is our manifest file.
+
+5
+00:00:19,000 --> 00:00:23,000
+So, I'm just going to go ahead and create a New Text Document.
+
+6
+00:00:23,000 --> 00:00:28,000
+And I'm just going to call this manifest.json.
+
+7
+00:00:28,000 --> 00:00:32,000
+Now, let's go ahead and edit this. Now, you can edit this in any editor that you like.
+
+8
+00:00:32,000 --> 00:00:35,000
+I'm going to go ahead and use Visual Studio.
+
+9
+00:00:35,000 --> 00:00:37,000
+So, just go ahead and open up this file.
+
+10
+00:00:37,000 --> 00:00:43,000
+And what we're going to do with this manifest file is we need to add everything for our extension.
+
+11
+00:00:43,000 --> 00:00:48,000
+So, I'm going to go through this step-by-step. The first thing that we're going want is our manifest
+
+12
+00:00:48,000 --> 00:00:53,000
+version, so I'm just going to do this in a JSON format.
+
+13
+00:00:53,000 --> 00:01:01,000
+So, I'm going to say manifest_version:2 and then comma, and then we're going to add each property just like this.
+
+14
+00:01:01,000 --> 00:01:08,000
+So, this manifest version 2 is going to specify that this is version 2 of the manifest.json format.
+
+15
+00:01:08,000 --> 00:01:12,000
+And that's the version, the current version that we want to use.
+
+16
+00:01:12,000 --> 00:01:19,000
+Then we're going to specify the name of our extension which we're just going to call this Hello World.
+
+17
+00:01:19,000 --> 00:01:24,000
+And then we're going to specify what the description is, so we'll use this description property.
+
+18
+00:01:24,000 --> 00:01:34,000
+And we're going to say this is my fist Chrome extension. And we're going to skip the icon for the actual
+
+19
+00:01:34,000 --> 00:01:39,000
+extension itself at this point since we're not really going be installing this anywhere.
+
+20
+00:01:39,000 --> 00:01:46,000
+But, we will put an icon for our actual browser action which we'll discuss here in a minute.
+
+21
+00:01:46,000 --> 00:01:48,000
+So, after we have our description we want to put in our inversion.
+
+22
+00:01:48,000 --> 00:01:55,000
+This one is required and we're just going to make this be version 1.0.
+
+23
+00:01:55,000 --> 00:01:59,000
+And then in the next section we're going to make this a browser action.
+
+24
+00:01:59,000 --> 00:02:04,000
+Remember that a browser action is going to mean that this extension is going to be a button that's going to
+
+25
+00:02:04,000 --> 00:02:08,000
+be available at the Chrome toolbar and that's how we're going to activate this.
+
+26
+00:02:08,000 --> 00:02:16,000
+So, in order to do this, we're actually going to make an object inside here that's going to have some properties.
+
+27
+00:02:16,000 --> 00:02:24,000
+So, we're going to say browser_action and then we're going to use these brackets to indicate that this is
+
+28
+00:02:24,000 --> 00:02:30,000
+another JavaScript object in this JSON or JavaScript object notation.
+
+29
+00:02:30,000 --> 00:02:36,000
+So, you can think of this as sort of like sub-properties. So, for browser action we're going to specify
+
+30
+00:02:36,000 --> 00:02:44,000
+what the default icon should be and in our case it's going to be icon.png.
+
+31
+00:02:44,000 --> 00:02:47,000
+So, we're going to need to make an icon, and we'll do that a little bit later.
+
+32
+00:02:47,000 --> 00:02:55,000
+And our icon will actually need to be 19x19 pixels. And then we want to specify what our HTML page that
+
+33
+00:02:55,000 --> 00:02:58,000
+is going to be shown when someone clicks this browser action.
+
+34
+00:02:58,000 --> 00:03:05,000
+So, we're going to say default_popup and we're going to set this equal to popup.html.
+
+35
+00:03:05,000 --> 00:03:12,000
+So, we'll need to go ahead and create an HTML file called popup.html and put in our directory.
+
+36
+00:03:12,000 --> 00:03:14,000
+So, that's all we're going to do for our manifest file.
+
+37
+00:03:14,000 --> 00:03:19,000
+Just to recap this real quick, we have our manifest version, we've got our information about our actual
+
+38
+00:03:19,000 --> 00:03:24,000
+extension including the name description and the version number of the actual extension,
+
+39
+00:03:24,000 --> 00:03:30,000
+and then this browser action. Remember we could actually have a browser action or a page action or
+
+40
+00:03:30,000 --> 00:03:36,000
+neither of those, but in our case we're using browser action which means that it's going to be one
+
+41
+00:03:36,000 --> 00:03:41,000
+of those extensions that's going to appear in the toolbar and when we click it, it's going to display something.
+
+42
+00:03:41,000 --> 00:03:47,000
+So, the icon it's going to show is going to be this icon.png and when we click it
+
+43
+00:03:47,000 --> 00:03:52,000
+it's going to show this popup.html. So, we'll need to create that popup.html.
+
+44
+00:03:52,000 --> 00:03:57,000
+And this is just a very, very simple manifest file, of course, like we had discussed you can add a lot
+
+45
+00:03:57,000 --> 00:04:01,000
+more options to a manifest file. And you can check out that documentation on the manifest files to find
+
+46
+00:04:01,000 --> 00:59:00,000
+out more about what is available.
+

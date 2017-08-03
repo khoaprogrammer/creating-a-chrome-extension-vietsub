@@ -1,0 +1,28 @@
+1
+00:00:01,000 --> 00:00:07,000
+Now, we can include one or more HTML files in our extension directory to be used with our extension.
+
+2
+00:00:07,000 --> 00:00:14,000
+In our case, we'll be including a popup.html file which will be used to display the UI for our extension
+
+3
+00:00:14,000 --> 00:00:20,000
+when the icon is clicked in the toolbar. HTML files used in extensions are just regular HTML documents
+
+4
+00:00:20,000 --> 00:00:26,000
+just like you would define for any web application with one important exception; you can't include embedded
+
+5
+00:00:26,000 --> 00:00:32,000
+script in the HTML file. This means you'll have to reference any JavaScript you want to use for your
+
+6
+00:00:32,000 --> 00:00:38,000
+HTML page as a JavaScript file that contains a script. Other than that, there's no special restrictions
+
+7
+00:00:38,000 --> 00:59:00,000
+imposed on HTML files that you use in your extension.
+
